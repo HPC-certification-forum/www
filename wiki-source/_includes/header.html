@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
+  <a class="navbar-brand" href="/"><img src="/assets/logo/logo-large.png"/></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      {% for sitePage in site.pages %}
+      {% if sitePage.title %}
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,22 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+
+a.mediafile{
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding: 0 0 0 18px;
+}
+
+a.pdf{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAhFBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAABmZmaUlJSVlZWZmZlUVFRmZmZfX1/4+Pj5+fn5+fn7+/v8/PxmZmaKioqLi4vm5ubn5+fp6enq6urr6+vs7Ozt7e3v7+/w8PDx8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn7+/v8/Pz////WBPdaAAAAFHRSTlMAAAIcIDI0Nn6RkZGbv83x8/X9/b9Y2vAAAACQSURBVBgZBcExTgMxEADA2fU5PgUaRGEq+P+36NwiBQhgm5mIXTIBc20HeS0vYL7/rl1CbU9rzvv9dt1/S+F4VcTe6zwev1dCSiVDbW/lgAixSv1Y89kBQSQxC3HWBoD8PGrrhm7ojJXZGJ3RGYNLog+gQ2IABuQd6AP4ibM2AMRXxL48ZAeMeYvYpQSAtf4BGyczgtpbtDIAAAAASUVORK5CYII=);
+}
+
+div.download div.card-text{
+  font-style:italic;
+}
