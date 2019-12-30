@@ -101,8 +101,15 @@ def generate_certificate(cert, row):
   outputFile = "certificates/%s" % cleanString(data["name"])
   createCertificate(outputFile + ".pdf", data)
 
+  crypted = gpg.encrypt(json.dumps(encData), recipients="HPC Certification Forum")
+  crypted = str(crypted).replace('\n', '')
+  crypted = re.sub(r"-----BEGIN PGP MESSAGE-----(.*)-----END PGP MESSAGE-----", r"\1", crypted)
+  crypted = crypted.replace('+', '.').replace('/', '_').replace('=', '-')
+  URL = "https://hpc-certification.org/verify?d=" + crypted
+
+
   # data to encrypt and return as TXT file
-  txt = "HPC Certification Forum Certificate\n\nThis text confirms that \"%s\"\nhas successfully obtained the certificate\n\"%s\" (id: %s) at %s." % (row[NAME], cert["name"], cert["id"], date)
+  txt = "HPC Certification Forum Certificate\n\nThis text confirms that \"%s\"\nhas successfully obtained the certificate\n\"%s\" (id: %s) at %s.\n\nVerification URL: %s" % (row[NAME], cert["name"], cert["id"], date, URL)
   crypted = gpg.sign(txt, keyid="0x74E894B4CAEB81B5")
   with open(outputFile + ".txt", "w") as fd:
     fd.write(str(crypted))
