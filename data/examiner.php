@@ -89,7 +89,7 @@ function view_page_exam_generate_index_html($data, $name, $email, $affiliation, 
   </head>
   <body id="inner">
   <h1>Examination for "<em><?php print($data["name"]); ?>"</em></h1>
-  <p>This multiple choice test contains questions to obtain the certificate "<em><?php print($data["name"]); ?></em>" with the ID <?php print($data["id"]); ?>. Note that more than one answer may be correct for a question.</p>
+  <p>This multiple-choice test contains questions to obtain the certificate "<em><?php print($data["name"]); ?></em>" with the ID <?php print($data["id"]); ?>. Note that more than one answer may be correct for a question.</p>
 
 	<script id="testMetadata" type="application/json">
 		{
@@ -251,7 +251,7 @@ function view_page_register($data){
   <h2>Privacy statement</h2>
   <h3>The certificate</h3>
   <p>
-    The certificate will show your name and affiliation, the month the exam was conducted and a description about the particular certificate.
+    The certificate will show your name and affiliation, the month the exam was conducted and a description of the particular certificate.
     It will also include a unique URL that can be given to a third-party allowing it to verify that you have obtained the certificate.
     It will be produced as a PDF and transferred via email to you.
   </p>
@@ -260,7 +260,7 @@ function view_page_register($data){
     To generate a meaningful certificate, we need the following personal information: <b>name</b>, <b>affiliation</b> and <b>email address</b>.
     On the server side, we will also attach the <b>date</b> the test was submitted to this metadata.
 
-    When you interact with the webserver, the typical server logs will be recorded as stated in <a href="https://www.hpc-certification.org/privacy/">the privacy statement</a>. These informations, will not be correlated to your personal information or the tests submitted here.
+    When you interact with the webserver, the typical server logs will be recorded as stated in <a href="https://www.hpc-certification.org/privacy/">the privacy statement</a>. These data will not be correlated to your personal information or the tests submitted here.
   </p>
   <h3>Data processing</h3>
   <p>
@@ -269,39 +269,39 @@ function view_page_register($data){
   <p>
     Your name and email is used solely to contact you and send you the test results and certificate (in case of your failure, we will send you some information that allows the discussion of your test results).
     We will not disclose your personal information, the results, or the generated certificate with any third party.
-    In case of a successful examiniation, this information will be deleted from the server immediately after the results are  processed and the  email has been sent to you.
-    In case of an unsuccesful examination, to prevent re-examination within a cooldown period, we will store a hash of your name together with the date of the examiniation for a duration that is the resit period of the individual certificate.
+    In case of a successful examination, this information will be deleted from the server immediately after the results are  processed and the  email has been sent to you.
+    In case of an unsuccessful examination, to prevent re-examination within a cooldown period, we will store a hash of your name together with the date of the examination for a duration that is the resit period of the individual certificate.
     After that duration, we will delete the information such that you can be re-examined.
   </p>
   <p>
     We will record the information of (date, affiliation), i.e.,
     how many users with a certain affiliation have obtained a certain certificate.
     We will use this database of affiliations and date to promote the certification program (e.g., by mentioning that someone from an affiliation have obtained a certain certificate).
-    These informations will <b>not</b> contain your name, email address, or the score.
+    This data will <b>not</b> contain your name, email address, or the score.
   </p>
   <p>
-    We will record the achieved score separetely from any personal information with the answered questions for the purpose to optimize the examination.
+    We will record the achieved score separately from any personal information with the answered questions for the purpose to optimize the examination.
   </p>
 
   <h2>Terms of this service</h2>
-  <p>We will take industry-typical precaution to prevent any cybercirme including theft of your personal data while your data is stored on any IT system involved in the data processing. However, in case of any data loss, theft of the data provided, we do not take liability for data loss or thefts caused by cyber crime.
+  <p>We will take industry-typical precautions to prevent any cybercrime including theft of your personal data while your data is stored on an IT system involved in the data processing. However, in case of any data loss, theft of the data provided, we do not take liability for data loss or thefts caused by cybercrime.
   Note that includes cases in which minor careless actions of staff enabled third-parties to steal or compromise the information.</p>
 
   <h2>Process</h2>
   <ol>
   <li>Once you are ready, you register for conducting the examination; therefore, enter your personal information into this form and submit it.</li>
   <li>We will immediately send you an email with a link to your personal examination. This link is valid for 24 hours. <em>Check your spam folder if it does not arrive!</em></li>
-  <li>The link will lead to a webpage with your examination questions, you have a <b>timelimit for this particular examination of <?php print($data["deadline"]);?> minutes</b>.</li>
+  <li>The link will lead to a webpage with your examination questions, you have a <b>time limit for this particular examination of <?php print($data["deadline"]);?> minutes</b>.</li>
   <li>We will mark your exam and send your results or your certificate (typically, this takes a week).</li>
   <li>The certificate will include a unique URL allowing anyone to verify that you obtained the certificate and the date.</li>
   </ol>
 
   <h1>Examination for "<em><?php print($data["name"]); ?>"</em></h1>
-  <p>This multiple choice test contains questions to obtain the certificate "<em><?php print($data["name"]); ?></em>" with the ID <?php print($data["id"]); ?>.</p>
+  <p>This multiple-choice test contains questions to obtain the certificate "<em><?php print($data["name"]); ?></em>" with the ID <?php print($data["id"]); ?>.</p>
 
   <p><?php print($data["learning aim"]); ?></p>
 
-  <p><b>Timelimit</b>: <?php print($data["deadline"]);?> minutes</p>
+  <p><b>Time limit</b>: <?php print($data["deadline"]);?> minutes</p>
   <p><b>Score to pass</b>: <?php print($data["minimum percentage"]);?>%</p>
 
 
@@ -316,7 +316,7 @@ function view_page_register($data){
   <input type="checkbox" name="privacy">
   </p>
 
-  <p>Press <b>Register for this examination</b> to transfer your request for examiniation together with the provided <b>personal information</b> to the server.</p>
+  <p>Press <b>Register for this examination</b> to transfer your request for examination together with the provided <b>personal information</b> to the server.</p>
 
   <input style="margin:20px" type="submit" value="Register for this examination!">
   </form>
