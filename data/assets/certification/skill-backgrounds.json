@@ -1,0 +1,210 @@
+[
+    {
+        "attribute": "background",
+        "value": [
+            "HPC systems are usually accessed via a command line interface (CLI).\nThe user acquires skills to use a \u2013 generally Linux based \u2013 CLI to interact\nwith the HPC system."
+        ],
+        "define": "list items",
+        "skill": "USE1"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "HPC systems are massively parallel and therefore sophisticated\nparallel programs are required to exploit their\nperformance potential as much as possible."
+        ],
+        "define": "list items",
+        "skill": "K2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "Tools used in Linux-based environemnts like htop,\niostat, and perf are sketched.",
+            "This includes information about utilization of resources like\nCPU as well as elapsed runtimes of a program,\nits unshared and shared memory usage, input and\noutput statistics for devices and file systems,\nand page faults, with tools like /usr/bin/time,\nps, top, and vmstat in Linux-based environments."
+        ],
+        "define": "list items",
+        "skill": "PE2.1"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The skill conveys general concepts about exception handling, how exception handling can be implemented\nin a specific programming language and how a consistent exception handling policy can be defined and thoroughly followed\nduring implementation."
+        ],
+        "define": "list items",
+        "skill": "SE2.5"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "Parallel programming of shared memory systems and message passing\nsystems as well as load balancing is addressed."
+        ],
+        "define": "list items",
+        "skill": "SE1.2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The user learns how to use practices and methods from\nsoftware engineering that are especially important for\nhigh performance engineering."
+        ],
+        "define": "list items",
+        "skill": "SE"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The benefits of software quality (functional and non-functional) are presented.\nAdditionally, codings standards are covered helping developers to\nincrease the quality of the code for better maintainability."
+        ],
+        "define": "list items",
+        "skill": "SE5"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "Practices of agile software development are covered in order to\nconvey skills about collaborative, and self-organizing software development\nadvocating adaptive planning, evolutionary development, and encouring rapid and flexible response to change."
+        ],
+        "define": "list items",
+        "skill": "SE4"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "Requirements elicitation, analysis and documentation are important,\nbut often neglected, stages in developing scientific computing software.\nThat is why the user will learn how to follow a systematic approach\nin order to appropriately collect and analyse requirements for\nthe application and how to capture assumptions and constraints.\nFollowing this approach will help the user to significantly\nimprove quality of scientific software."
+        ],
+        "define": "list items",
+        "skill": "SE6.1"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "Logging is necessary in order to comprehend when, where,\nand why an error occurs during the execution.\nParallel programs are prone to failures and errors during operation.\nKnowledge about logging concepts, the ability to apply them appropriately,\nand to purposefully analyze the log files is therefore essential\nin the context of high performance computing."
+        ],
+        "define": "list items",
+        "skill": "SE2.4"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "In order to preserve knowledge about the main components of the software and the related decisions about why\nthe software have been designed this specific way, it is important to document them. This skill covers how\nsoftware architecture and design can appropriately be documented, e.g. using templates."
+        ],
+        "define": "list items",
+        "skill": "SE7.2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The user learns how to\ncomplete programming tasks and gets a short\noverview of machine- and assembly-languages toward\nso-called high-level programming languages.",
+            "The focus lies on the programming languages that\nare in widespread use within the HPC community."
+        ],
+        "define": "list items",
+        "skill": "SE1.1"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The workflow is represented\nby an optimization cycle with the steps benchmarking,\ngathering system performance data (e.g. via profiling),\nanalyzing, and tuning."
+        ],
+        "define": "list items",
+        "skill": "PE5"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "This skill conveys how dependencies are managed, how and why to setup\ndifferent environments for development, testing, and production,\nhow and why to automate the deployment process and the importance\nof preserving and documenting reproducible software stacks that can be\nused by other users/researchers in order to reliably reproduce the results."
+        ],
+        "define": "list items",
+        "skill": "SE3.5"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "This skill covers how to apply version and configuration management to\nthe development of (parallel) programs in order to\ntrack and control changes in the sources and how to establish\nand maintain consistency of the program or software\nsystem throughout its life, and facilitate\ncooperative development.",
+            "Systems like Revision\nControl System (RCS), Subversion (SVN),\nand GIT are presented."
+        ],
+        "define": "list items",
+        "skill": "SE3.2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The potential for\ntuning via reprogramming exists on the hardware\nas well as on the software level.\nAt the software level, performance improvements\nare achievable by using more efficient\nalgorithms.\nThis is explained by the help of popular\npractice-relevant examples."
+        ],
+        "define": "list items",
+        "skill": "PE4.3"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "HPC systems have\ngenerally installed multiple versions of a\nnumber of key software tools and software\nenvironments.",
+            "Package managers like Spack are sketched."
+        ],
+        "define": "list items",
+        "skill": "USE1.3"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "This skill provides knowledge about software development best practices that will help\nscientists to develop high-quality scientific software."
+        ],
+        "define": "list items",
+        "skill": "SE2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "This skill conveys programming idioms in general and for specific programming\nlanguages in order to help developers to solve recurring programming problems."
+        ],
+        "define": "list items",
+        "skill": "SE2.3"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "In the recent past, Supercomputing as well as the analysis of Big Data\nare increasingly growing in importance for scientific research."
+        ],
+        "define": "list items",
+        "skill": "K1.5"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The user learns how to use practices and methods from\nsoftware engineering that are especially important for\nhigh performance engineering."
+        ],
+        "define": "list items",
+        "skill": "SE5.2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The benefits of release management are explained. Moreover, it is covered how\nsoftware releases are managed according to a well-defined and consistent process."
+        ],
+        "define": "list items",
+        "skill": "SE3.4"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The parallel\nconcepts of threads and processes are\nintroduced and their impacts on performance are\noutlined."
+        ],
+        "define": "list items",
+        "skill": "SE1.2.2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "Profiling is explained for the CPU level,\nwhere it can be supported by hardware\nperformance counters and by sampling techniques.",
+            "Sampling is used to see, by examining the\nprogram counter, what routines and source code\nlines of a program are responsible for which\nportions of the total runtime.",
+            "Automatically adding trace code to a parallel\nprogram by so-called instrumentation to record\nits execution in a strict chronology is\nexplained and the difference to profiling is\nemphasized.",
+            "Similar techniques are explained for profiling\nthe network level (e.g. based on InfiniBand\ncounters and I/O server states)."
+        ],
+        "define": "list items",
+        "skill": "PE2.2"
+    },
+    {
+        "attribute": "background",
+        "value": [
+            "The user's awareness of the\ncosts related to the operation of an HPC system is\nraised.",
+            "For the resources of an HPC system, a distinction is\nmade between costs for the computing elements of the\nsupercomputer and costs for the storage system."
+        ],
+        "define": "list items",
+        "skill": "K5"
+    }
+]

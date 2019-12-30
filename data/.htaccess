@@ -1,0 +1,1 @@
+RewriteRule ^examiner         examiner.php  [QSA,L]

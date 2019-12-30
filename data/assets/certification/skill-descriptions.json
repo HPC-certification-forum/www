@@ -1,0 +1,846 @@
+[
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nhow to map domains to machines",
+            "Knowledge of\ntypical decomposition strategies\nto split a domain into subdomains to\nmake it suited for parallel processing",
+            "Knowledge of\nmeasures like surface to volume ratio"
+        ],
+        "define": "list items",
+        "skill": "K3.4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nconcepts of issue/bug tracking systems and their\nbasic concepts like task, sub-task, new feature, story,\nrelease planning, sprint planning in order to structure\nand organize the development process\n(e.g. assigning tasks to developers, reporting bugs,\nwriting user stories, managing the stages of an issue\n(to do, in progress, in review, done) etc.)",
+            "Knowledge of\ndifferent issue tracking systems,\nlike Jira or Redmine",
+            "Ability to\napply issue tracking in order to manage tasks, bug reports,\nand other issues occuring during development and enabling\ntask assignment in the team",
+            "Ability to\napply different issue tracking systems,\nlike Jira or Redmine, to the development project",
+            "Ability to\ndefine a consistent workflow in the development team for issue tracking"
+        ],
+        "define": "list items",
+        "skill": "SE3.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse and write shell scripts e.g. to\nautomatically execute several commands in a row\nin order to automate more complex tasks",
+            "Ability to\nuse and write shell scripts e.g. to\nautomatically execute several commands in a row\nthat otherwise would have to be entered manually\none by one and to automate simple tasks",
+            "Ability to\nselect the right environment setting to build\nprograms with the proper compiler, linker, and\nlibraries versions or to run programs"
+        ],
+        "define": "list items",
+        "skill": "USE1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nselect appropriate tasks sizes (big vs.\nsmall) that may have positive performance\nimpacts on the workflow, and to run several\n(smaller) tasks by the help of job chaining",
+            "Ability to\nuse mapping of processes to nodes,\npinning of processes/threads to CPUs or\ncores, and setting memory affinities to\nNUMA nodes in order to speed up a parallel\nprogram",
+            "Ability to\nspeed up program execution by setting\nappropriate runtime options (e.g. for MPI\nand OpenMP)"
+        ],
+        "define": "list items",
+        "skill": "PE4.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe various overheads, i.e.\noverheads for communication,\nsynchronization",
+            "Knowledge of\nthe problems of load imbalances",
+            "Knowledge of\nthe overheads caused by redundant computations",
+            "Knowledge of\nthe problems of execution speed noise\n(OS jitter, cache\ncontention, thermal throttling, etc.),\nand typical trade-offs (e.g. reducing\nthe synchronization overhead by\nincreasing the communication overhead)"
+        ],
+        "define": "list items",
+        "skill": "K3.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess the impact of communication and\nsynchronization on the performance of a\nparallel program",
+            "Knowledge of\nthe concept of overlay networks",
+            "Knowledge of\nthe various communication modes (e.g. blocking vs.\nnon-blocking, point-to-point vs.\ncollective)",
+            "Ability to\ndevelop programs using MPI\nas the de-facto standard for\nparallelizing programs in distributed\nenvironments like HPC cluster systems",
+            "Ability to\nunderstand how race conditions and\ndeadlocks may occur in MPI parallelized\nprograms and how they can be avoided,\nnamely by reordering send and receive\noperations or using non-blocking\ncommunication combined with waiting for\ncompletion of the communication operations\nconcerned"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndesign the application as a plugin architecture so\nthat the functionality can be extended more easily",
+            "Ability to\ndesign the software architecture of the system based on\nsoftware architecture patterns",
+            "Ability to\ndevelop an HPC application according to a reference architecture\nand adhering to the standards/guidelines given by the reference architecture",
+            "Knowledge of\ncomponent-based software architecture for scientific applications\nand ability to apply component-based architecture design",
+            "Knowledge of\narchitecture bad smells",
+            "Ability to\nidentify sub-optimal design decisions in architecture designs\n(e.g. sub-optimal communication between components)",
+            "Ability to\ndescribe the software architecture of a scientific applications,\nwhat the most critical architecture decisions are,\nwhat the main structures of the system are,\nwhat the interfaces of the systems are,\nhow they are designed and how\ncomponents communicate with each other",
+            "Ability to\nunderstand which software architecture patterns are\ntypical for a specific type of scientific application\nand which aspects (e.g. quality attributes) they address",
+            "Ability to\napply design patterns to HPC, e.g. patterns\nfor coding of parallel algorithms and their mapping\nto various architectures",
+            "Knowledge of\nreference architectures for scientific applications",
+            "Knowledge of\narchitectural tactics for performance, scalability etc.",
+            "Ability to\napply software architecture principles during architecture design",
+            "Knowledge of\nthe characteristics and the architectural challenges\nof data-intensive and compute-intensive software systems\nand how they can be appropriately addressed",
+            "Knowledge of\nthe importance and impact of software\narchitecture during software development",
+            "Knowledge of\nsoftware architecture principles"
+        ],
+        "define": "list items",
+        "skill": "SE6.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nhow the performance of parallel programs may be assessed"
+        ],
+        "define": "list items",
+        "skill": "K2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse the command line interface",
+            "Ability to\nwrite robust job scripts, e.g. to simplify job submissions by the help of\nautomated job chaining",
+            "Ability to\nselect the appropriate software environment",
+            "Ability to\nuse a workload manager to allocate HPC resources for running a parallel\nprogram interactively",
+            "Ability to\nconsider cost aspects",
+            "Ability to\nmeasure system performance as a basis for benchmarking a parallel\nprogram",
+            "Ability to\nbenchmark a parallel program",
+            "Ability to\ntune a parallel program from the outside via\nruntime options",
+            "Ability to\napply the workflow for tuning",
+            "Ability to\nrun parallel programs in an HPC environment",
+            "Ability to\nuse a workload manager like SLURM or TORQUE to allocate HPC resources\n(e.g. CPUs) and to submit a batch job"
+        ],
+        "define": "list items",
+        "skill": "USE2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\napply design patterns for HPC",
+            "Ability to\nunderstand and use the main concepts of object-orientation\n(classes, interfaces, polymorphism) to design and implement a program",
+            "Knowledge of\ndesign patterns for HPC",
+            "Ability to\nwrite modular, reusable code by applying software\ndesign principles like Separation of concerns,\nloose coupling, information hiding, DRY, KISS etc.\n(following best practices like Clean Code by Robert C. Martin)",
+            "Ability to\napply object-oriented design and programming to scientific applications"
+        ],
+        "define": "list items",
+        "skill": "SE6.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse standard tools of the operating\nsystem to get information about the\nbehavior of parallel programs\nin terms of their resource utilization"
+        ],
+        "define": "list items",
+        "skill": "PE2.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe concepts of SCRUM, e.g. Sprint, Backlog,\nPlanning, Daily meetings/Stand up meeting, project velocity",
+            "Ability to\napply practices of SCRUM"
+        ],
+        "define": "list items",
+        "skill": "SE4.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse and write shell scripts",
+            "Ability to\nuse troubleshooting, e.g. to handle\nsyntactic and logical errors in scripts",
+            "Ability to\nread keyboard input to add\ninteractivity to scripts",
+            "Ability to\nuse flow control, e.g. for conditional\nand/or repeated execution of statements in\nscripts",
+            "Ability to\nuse shell functions to break large,\ncomplex tasks into a series of small,\nsimple tasks",
+            "Ability to\nwrite robust job scripts, e.g. to simplify\njob submissions by the help of\nautomated job chaining"
+        ],
+        "define": "list items",
+        "skill": "USE1.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nparallelization techniques at\nthe intra-node level (e.g. based on\nbasic OpenMP features)",
+            "Knowledge of\nthe message passing paradigm\nbased on environments like MPI, which\nis the de-facto standard at the\ninter-node level for parallelizing\nprograms using more than a single node",
+            "Knowledge of\nhybrid parallelization\napproaches, combining for instance\nOpenMP and GPU-Computing",
+            "Knowledge of\nmulti-level approaches (e.g. combining OpenMP and MPI)",
+            "Knowledge of\nparallelization techniques at\nthe intra-node level (e.g. based on\nadvanced OpenMP features and\nGPU-computing)"
+        ],
+        "define": "list items",
+        "skill": "K3.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe differences between the terms \"mistake\",\n\"fault\", \"failure\", and \"error\"",
+            "Knowledge of\nexception handling concepts in general\n(e.g. Errors vs. Exceptions)",
+            "Ability to\nunderstand why it helps to write software that is robust",
+            "Ability to\nuse best practices for exception handling",
+            "Ability to\nunderstand how exception handling is supported\nin a specific programming language,\ne.g. FORTRAN, C (e.g. <errno.h>), C++ (i.e. try, catch, throw)",
+            "Ability to\napply appropriate exception handling in a specific programming language"
+        ],
+        "define": "list items",
+        "skill": "SE2.5"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ntune a parallel program in order to achieve better runtimes and to optimize the usage of the HPC resources"
+        ],
+        "define": "list items",
+        "skill": "PE4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess the parallel nature of algorithms",
+            "Ability to\ndevelop parallel programs"
+        ],
+        "define": "list items",
+        "skill": "SE1.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nvarious system-, hardware-, and\nI/O-architectures used for supercomputers,\ni.e. shared memory systems, distributed systems, and cluster systems",
+            "Knowledge of\nthe typical architecture of cluster\nsystems consisting of nodes with different roles (e.g. so-called head, login, compute,\ninteractive, visualization nodes, etc.)",
+            "Knowledge of\nstorage and compute deployments for cluster systems"
+        ],
+        "define": "list items",
+        "skill": "K1.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nsoftware engineering methods and practices especially\nin the context of high performance computing",
+            "Ability to\ndevelop parallel programs and to apply software\nengineering methods and best practices"
+        ],
+        "define": "list items",
+        "skill": "SE"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe purpose and importance of software configuration management,\nespecially in the context of high performance computing",
+            "Knowledge of\nthe basic concepts, terms and processes of SCM",
+            "Ability to\napply steps of SCM in a HPC project"
+        ],
+        "define": "list items",
+        "skill": "SE3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess that there are algorithms\nhaving a so-called sequential nature that\nhave been notoriously difficult to\nparallelize, for example alpha-beta\ngame-tree search",
+            "Ability to\nunderstand that some algorithms are\nembarrassingly (i.e. trivially)\nparallelizable while their parallelization\nwill vary from easy to hard in practice",
+            "Ability to\ndetermine the computational complexity of algorithms"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\ntypical I/O systems used in HPC environments",
+            "Knowledge of\ndifferent types of media (e.g. tape, disk, and SSD)",
+            "Knowledge of\nthe differentiation between standard\nfile systems and distributed file systems",
+            "Knowledge of\nwhen to use local and global storage",
+            "Knowledge of\nstandard file systems like Ext3, Ext4, XFS, and Btrfs\nand distributed file systems like Lustre, and BeeGFS",
+            "Knowledge of\nwhen to use data compression"
+        ],
+        "define": "list items",
+        "skill": "K1.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe roofline model, used to\nprovide performance estimates for\nparallel programs based on multi-core or accelerator processor architectures,\nby showing inherent hardware\nlimitations",
+            "Knowledge of\nthe definitions for key terms like speedup, efficiency, and scalability",
+            "Knowledge of\nthe key measure floating point\noperations per second (FLOPS) for the\nperformance of HPC systems and its\npitfalls",
+            "Knowledge of\nMoore\u2019s law and\nits significance for performance\nfrontiers in modern HPC",
+            "Knowledge of\nAmdahl\u2019s law and\nits significance for performance\nfrontiers in modern HPC"
+        ],
+        "define": "list items",
+        "skill": "K2.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\napply common code refactorings in order to improve code quality,\nsuch as extract method, extract class, rename class and when it is suitable\nto apply which refactoring",
+            "Ability to\napply refactoring that are specific to programming languages\n(e.g. Fortran)"
+        ],
+        "define": "list items",
+        "skill": "SE5.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nsophisticated scheduling principles (e.g. fair share)\nto achieve objectives like treating the users fair,\nand maximizing the\nutilization of the available HPC resources",
+            "Knowledge of\nhow workload managers control the unattended background execution\nof programs or jobs respectively by the help of job queues",
+            "Knowledge of\ntypical scheduling principles (e.g. first\ncome first served, shortest job first) to achieve\nobjectives like minimizing the averaged elapsed program runtimes,\nand maximizing the\nutilization of the available HPC resources",
+            "Knowledge of\nadvanced scheduling principles (e.g. backfilling) to achieve\nobjectives like minimizing the averaged elapsed\nprogram runtimes, and maximizing the\nutilization of the available HPC resources"
+        ],
+        "define": "list items",
+        "skill": "K4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess and improve the quality of the software especially\nwith respect to functionality and maintainability",
+            "Ability to\nhave the awareness of technical debt during software development\nand how to pay technical debt"
+        ],
+        "define": "list items",
+        "skill": "SE5"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndesign and develop programs on a higher level of\nabstraction by applying software architecture\nand object-oriented design"
+        ],
+        "define": "list items",
+        "skill": "SE6"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndocument all necessary information for end-users\nso that they are able to reproduce the results",
+            "Ability to\ndocument the software stack, build instructions,\ninput data, results etc.",
+            "Ability to\nuse tools for literate programming like activepapers\nknitr, or jupyter to document all necessary information for end-users\nso that they are able to reproduce the results especially in the context of concurrency",
+            "Knowledge of\nsoftware engineering methods and practices especially\nin the context of high performance computing",
+            "Ability to\ndevelop parallel programs and to apply software\nengineering methods and best practices"
+        ],
+        "define": "list items",
+        "skill": "SE7.4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nmeasure the system performance by the help of\nstandard tools and by profiling in order to assess\nthe runtime behavior of parallel programs"
+        ],
+        "define": "list items",
+        "skill": "PE2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess the costs related to the runtimes of parallel programs against the\nbackground of cost models",
+            "Ability to\nassess the ratio of personnel costs to resource costs against the background\nof break-even considerations and time to solution constraints"
+        ],
+        "define": "list items",
+        "skill": "PE1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\napply the principles in the context of an HPC project",
+            "Knowledge of\nthe principles of extreme programming\nand when to apply it"
+        ],
+        "define": "list items",
+        "skill": "SE4.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nunderstand and apply agile development practices in the context of HPC"
+        ],
+        "define": "list items",
+        "skill": "SE4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nidentify functional and non-functional requirements of the software\nto be implemented",
+            "Ability to\ncapture a common terminology, constraints, and assumptions",
+            "Ability to\nevaluate the identified requirements against the background of Software Quality",
+            "Ability to\nuse the identified requirements to validate them by tests",
+            "Ability to\nuse a predefined template in order to capture the requirements",
+            "Knowledge of\nthe role of requirements elicitation and analysis during software development"
+        ],
+        "define": "list items",
+        "skill": "SE6.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse a review system like Gerrit to\norganize the code reviews",
+            "Ability to\ndocument code review results and resulting tasks\nin an issue tracking system (for example Jira)",
+            "Ability to\ndefine checklists for code reviews",
+            "Ability to\nconduct code reviews in pairs or in a team"
+        ],
+        "define": "list items",
+        "skill": "SE5.4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nlogging demands and challenges especially for distributed systems",
+            "Ability to\nchoose the most appropriate log format for the context",
+            "Ability to\napply structured logging and text logging",
+            "Ability to\ndevelop, maintain, and document a consistent\nlogging concept for a program",
+            "Ability to\nimplement a logging concept for a program in a\nspecific programming language, e.g. FORTRAN, C, C++",
+            "Knowledge of\nlogging in general like log levels etc. (e.g. ERROR, WARN, INFO, DEBUG, TRACE)",
+            "Knowledge of\ndifferent logging formats",
+            "Ability to\nchoose appropriate information that should be logged\ne.g. timestamp, pid, thread, level, loggername)\nin order to be able to identify the problem",
+            "Ability to\ndifferentiate between structured logging and text logging",
+            "Knowledge of\nlogging implementations/libraries for a\nspecific programming language like FORTRAN, C, C++"
+        ],
+        "define": "list items",
+        "skill": "SE2.4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe typical parallelization techniques\nused at the intra- and inter-node level of\ncluster systems",
+            "Knowledge of\nthe causes of parallelization\noverheads, which eventually prevent efficient\nuse of an increasing number of processing\nelements",
+            "Knowledge of\ndomain decomposition strategies (i.e.\nsplitting a problem into pieces that allow for\nparallel computation)"
+        ],
+        "define": "list items",
+        "skill": "K3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndevelop programs for HPC",
+            "Ability to\ndevelop parallel programs for shared memory systems\nas well as for message passing systems",
+            "Knowledge of\nefficient algorithms and data structures",
+            "Ability to\nassess the efficiency and suitability of algorithms\nand data structures for the respective application"
+        ],
+        "define": "list items",
+        "skill": "SE1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess general concepts of HPC I/O systems (e.g. parallel file systems)\nand how to map the data model to the storage system,\ne.g. by using appropriate I/O libraries and middleware architectures"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.5"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndocument the different views of the software architecture\naccording to a specific documentation framework,\ne.g. 4+1 views, Views and Beyond,\narchitecture decision frameworks (e.g. Taylor, Olaf Zimmermann)",
+            "Ability to\napply a modeling language for documenting the design\nand the architecture, e.g. Unified Modeling Language"
+        ],
+        "define": "list items",
+        "skill": "SE7.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse program language extensions used in HPC environments, such as\nHPX, Cilk",
+            "Ability to\nprogram in advanced languages typically used in HPC environments, such as\nC++, Python",
+            "Ability to\nuse interoperability between languages, for example\nby calling C or C++ from FORTRAN and vice versa",
+            "Ability to\nprogram in languages typically used in HPC environments, such as\nC, FORTRAN"
+        ],
+        "define": "list items",
+        "skill": "SE1.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\napply the full workflow for tuning a parallel program"
+        ],
+        "define": "list items",
+        "skill": "PE5"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nspeed up program execution by using\noptimized libraries and setting appropriate\ncompiler/linker options",
+            "Ability to\nspeed up program execution by setting\npackage specific options (e.g. selected by\nenvironment variables and command line\narguments)",
+            "Ability to\nspeed up program execution by setting\nappropriate compiler/linker options\nfor the PGO workflow"
+        ],
+        "define": "list items",
+        "skill": "PE4.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nbuild parallel programs",
+            "Ability to\ndevelop parallel software"
+        ],
+        "define": "list items",
+        "skill": "USE4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe basics of dependency management",
+            "Ability to\nunderstand that different environments for testing,\ndevelopment, production, and staging are necessary",
+            "Knowledge of\nthe differences between different deployment environments,\nand what specific requirements are for each",
+            "Ability to\nuse software building environments like\nmake, Autotools, CMake",
+            "Knowledge of\ncontinuous integration, delivery, and deployment and the differences between them",
+            "Knowledge of\nthe benefits, drawbacks, and tradeoffs of continuous integration, delivery, and deployment",
+            "Ability to\nsetup the production, testing, and development environments",
+            "Ability to\nclearly define and preserve reproducible software stacks\nto make computational results reproducible,\ne.g. by applying virtualization environments like VirtualBox,\nDocker, rkt, or BioContainers or tools for defining scientific workflows like\nNextflow, or Singularity",
+            "Ability to\nconfigure an environment for continuous integration,\ndelivery, and deployment using a selected continuous\nintegration tool like Jenkins, Buildbot or Travis-CI\nwith basic processing steps like compiling and automated testing",
+            "Knowledge of\nthe basics of dependency management for\ndifferent programming languages",
+            "Ability to\nuse advanced software building environments like\nScons and Waf",
+            "Ability to\nto undestand challenges for Portability e.g. for the\nsource code of programs and job scripts to avoid\ntypical compiler-, linker-, and MPI-issues.",
+            "Ability to\nuse a software build and installation framework like EasyBuild"
+        ],
+        "define": "list items",
+        "skill": "SE3.5"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe challenges of testing scientific applications",
+            "Ability to\nunderstand test-driven and test-first concepts\nand understanding the benefits",
+            "Ability to\nunderstand what constitutes a test strategy",
+            "Ability to\nunderstand that there are different test types,\ne.g. given by the test pyramid",
+            "Ability to\napply unit testing in a specific programming language\nusing an appropriate unit testing framework,\ne.g. pfUnit for Fortran,\nglib testing framework for C",
+            "Ability to\ndevelop (agile) testing strategies",
+            "Ability to\nwrite different test types for the test pyramid"
+        ],
+        "define": "list items",
+        "skill": "SE4.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe basics of SCM from the IEEE standards (e.g. IEEE-Standard 729-1983,\nIEEE 828: Software Configuration Management Plans, IEEE 1042:\nGuide to Software Configuration Management",
+            "Knowledge of\nterms like Configuration Item, Baseline, SCM Directories,\nVersion, Revision, Release"
+        ],
+        "define": "list items",
+        "skill": "SE3.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess the efficiency of algorithms and data\nstructures, especially with respect to their\nsuitability for typical (scientific) (parallel)\nprograms, e.g. by the help of popular\npractice-relevant examples"
+        ],
+        "define": "list items",
+        "skill": "SE1.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe basics of version control systems, e.g. what is version control",
+            "Knowledge of\nthe benefits of using version control for software development\nespecially in a team; what is branching and merging",
+            "Ability to\nassess the difference between distributed and centralized\nversion control systems",
+            "Knowledge of\nbasic Git concepts",
+            "Knowledge of\nbasic SVN concepts",
+            "Ability to\nuse basic git commands such as git add, git commit,\ngit pull, git push",
+            "Ability to\nuse SVN commands",
+            "Ability to\nresolve merge conflicts",
+            "Ability to\napply a specific workflow, such as Feature Branch Workflow,\nGitflow Workflow, Centralized Workflow, Forking Worfklow",
+            "Ability to\napply advanced git concepts and commands",
+            "Ability to\napply Git as a version control system",
+            "Ability to\napply SVN as a version control system",
+            "Knowledge of\nadvanced git concepts, such as pull requests,\nbranches, tags, submodules etc.",
+            "Knowledge of\ndifferent types of workflows, such as Feature Branch Workflow,\nGitflow Workflow, Centralized Workflow, Forking Worfklow"
+        ],
+        "define": "list items",
+        "skill": "SE3.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse systematic approaches (e.g. benchmarking and\ntuning, cost models) to meet performance requirements in a\ncost-effective way, i.e. by reducing the runtimes of\nparallel programs and using the resources of the HPC system\nappropriately for that purpose"
+        ],
+        "define": "list items",
+        "skill": "PE"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe auto parallelization\ncapabilities of current compilers (e.g.\nto automatically parallelize suitable\nloops), which are applicable at the\nintra-node level"
+        ],
+        "define": "list items",
+        "skill": "K3.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nrun parallel programs in an HPC environment",
+            "Ability to\nuse a compiler and to asses the effects of optimization switches available\nfor compilers commercially available (e.g. PGI, NAG)",
+            "Ability to\nuse efficient open source libraries (e.g. OpenBLAS,\nFFTW) or highly optimized vendor libraries (e.g. Intel-MKL, IBM-ESSL)",
+            "Ability to\nconfigure the relevant settings (e.g. by setting compiler and linker options),\nwhich determine how the application ought to be build with regard to the\nparallelization technique(s) used (e.g. OpenACC, C++ AMP)",
+            "Ability to\nuse the profile guided optimization (PGO) technique",
+            "Ability to\nuse software building environments like\nScons, Waf,\nmake, Autotools, CMake",
+            "Ability to\nbuild parallel programs, e.g. via open sources packages",
+            "Ability to\nuse a compiler and to asses the effects of optimization switches available\nfor the relevant compilers (e.g. GNU, Intel)",
+            "Ability to\nuse a linker and to assess the effects of linker specific options and environment\nvariables (e.g. -L and LIBRARY_PATH, -rpath and LD_RUN_PATH)",
+            "Ability to\nconfigure the relevant settings (e.g. by setting compiler and linker options),\nwhich determine how the application ought to be build with regard to the\nparallelization technique(s) used (e.g. OpenMP, MPI)",
+            "Ability to\nuse software building environments like\nmake, Autotools, CMake",
+            "Ability to\nuse a linker and to assess the effects of advanced linker specific options and environment\nvariables (e.g. LIBRARY_PATH)",
+            "Ability to\nconfigure the relevant settings (e.g. by setting compiler and linker options),\nwhich determine how the application ought to be build with regard to advanced\nparallelization technique(s) used (e.g. CUDA)"
+        ],
+        "define": "list items",
+        "skill": "USE3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nrun parallel programs in an HPC environment",
+            "Ability to\nreprogram appropriate parallel\ncode for improved performance on the processing element level e.g. by using\nfunctional units (for executing fused\nmultiply-add instructions and variants\nthereof), by using vectorization\ntechniques with SIMD instructions, etc.",
+            "Ability to\nassess how appropriate computationally\nintensive functions (which have been\nidentified earlier by profiling the\nparallel program) can be ported to many\ncore archictures like GPUs to achieve\nfurther speedups"
+        ],
+        "define": "list items",
+        "skill": "PE4.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nappropriately document source code using documentation\ngenerators like doxygen, pydoc, or sphinx",
+            "Ability to\nproduce a consistent source code documentation according\nto guidelines and best practices"
+        ],
+        "define": "list items",
+        "skill": "SE7.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nselect the appropriate versions for deployment to the session environment,\ne.g. via the so-called environment modules system"
+        ],
+        "define": "list items",
+        "skill": "USE1.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndebug a program using simple techniques such\nas inserting debugging output statements into the\nsource code, e.g. using printf \u2013 also\nagainst the background of potential problems with\nthe ordering of the (stdout) output that may exist\nin parallel environments like MPI",
+            "Knowledge of\nthe common concepts and workflows when using\na debugger (commands like step into, step over, step out, breakpoints)",
+            "Ability to\nuse sophisticated debuggers such as GDB",
+            "Ability to\nuse sophisticated debuggers such as DDT and TotalView"
+        ],
+        "define": "list items",
+        "skill": "SE2.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nuse a cluster operating system as well as to run, build, and develop parallel programs"
+        ],
+        "define": "list items",
+        "skill": "USE"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess speedups and efficiencies as the key\nmeasures for benchmarks of a parallel program",
+            "Ability to\nbenchmark the runtime behavior of parallel\nprograms, performing controlled experiments by\nproviding varying HPC resources (e.g. 1, 2, 4, 8,\n... cores on shared memory systems or 1, 2, 4, 8,\n... nodes on distributed systems for the benchmarks)",
+            "Ability to\ndifferentiate between strong and weak scaling",
+            "Ability to\nassess the performance characteristics of\nparallel programs with regard to CPU usage,\nmemory accesses (e.g. latencies for random access,\ncache sizes, strided access patterns, and\nbandwidth), I/O operations (e.g. record length,\nIOPs, latency, bandwidth, throughput, and\nmulti-stream processing), and communication\n(message sizes, network bandwidth and latency)"
+        ],
+        "define": "list items",
+        "skill": "PE3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nexecute frequently used commands, e.g.\nto navigate the file system, copy, rename,\nand delete files, view the contents of\nfiles, and to get detailed help for the\nusage of a command with all its options",
+            "Ability to\nuse wildcards\nto select or filter e.g. files",
+            "Ability to\nlogin remotely to cluster nodes using\ne.g. SSH with password or SSH key\nauthentication",
+            "Ability to\naccess local and remote files in remote sessions",
+            "Ability to\ncheck disk quotas commonly used to\nlimit the amount of disk space available\nfor the user",
+            "Ability to\nuse regular expressions\nto select or filter several items at once\n(e.g. file content)",
+            "Ability to\naccess local and remote files using enhanced features (e.g. via SSHFS) in remote sessions"
+        ],
+        "define": "list items",
+        "skill": "USE1.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe best practices from software\nengineering regarding programming",
+            "Ability to\napply programming best practices in order\nto develop robust and maintainable programs"
+        ],
+        "define": "list items",
+        "skill": "SE2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndocument requirements using a specified template",
+            "Ability to\nunderstand which information needs to be captured in a requirements document",
+            "Knowledge of\nthe IEEE standard for software requirements\nspecification for a structured requirement specification"
+        ],
+        "define": "list items",
+        "skill": "SE7.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nrecognize where programming idioms are violated and to\nrefactor the code to comply to a specific programming idom",
+            "Knowledge of\nprogramming idioms for a specific programming language,\ne.g. FORTRAN, Python, C, C++",
+            "Ability to\napply programming idioms for a specific programming language,\ne.g. FORTRAN, Python, C, C++"
+        ],
+        "define": "list items",
+        "skill": "SE2.3"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nconfigure and use integrated development environments (IDEs)\nlike Eclipse, e.g. to seamlessly perform the typical\ndevelopment cycle with the steps edit, build\n(compile and link), and test"
+        ],
+        "define": "list items",
+        "skill": "SE2.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nspecial or application-specific hardware (e.g. TPUs)",
+            "Knowledge of\nparallelization techniques at the instruction level of a processing\nelement (e.g. pipelining, SIMD processing)",
+            "Knowledge of\nhybrid approaches, e.g. combining CPUs with GPUs or FPGAs",
+            "Knowledge of\ntypical network topologies and architectures used for HPC systems,\nlike fat trees based on switched fabrics using e.g. fast Ethernet (1 or 10\nGbit) or InfiniBand",
+            "Knowledge of\nelementary processing elements\nlike CPUs, GPUs, many core architectures",
+            "Knowledge of\nvector systems, and FPGAs",
+            "Knowledge of\nthe NUMA architecture used for symmetric multiprocessing\nsystems where the memory access time depends on the memory location relative\nto the processor",
+            "Knowledge of\nnetwork demands for HPC systems (e.g. high bandwidth and\nlow latency)",
+            "Knowledge of\ntypical network architectures used for HPC systems,\nlike fast Ethernet (1 or 10 Gbit) or InfiniBand"
+        ],
+        "define": "list items",
+        "skill": "K1.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nvarious system-, hardware-,\nand I/O-architectures used for supercomputers,\ni.e. computers that led the world in terms of\nprocessing capacity, and particularly in speed of\ncalculations, at the time of their introduction,\nor share key architectural aspects with these\ncomputers",
+            "Knowledge of\ntypical operation of data and computing centers",
+            "Knowledge of\nthe differentiation between Supercomputing and Big Data"
+        ],
+        "define": "list items",
+        "skill": "K1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe typical infrastructure of data\nand computing centers",
+            "Knowledge of\nthe typical infrastructure of data\nand computing centers, also against the\nbackground of economic and business aspects",
+            "Knowledge of\nadministration aspects of an HPC system",
+            "Knowledge of\nuser support aspects (typically on different levels)"
+        ],
+        "define": "list items",
+        "skill": "K1.4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nadhere to coding standards and conventions in a project",
+            "Ability to\ndefine and establish coding standards and conventions in a project"
+        ],
+        "define": "list items",
+        "skill": "SE5.1"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe field of High Performance Computing"
+        ],
+        "define": "list items",
+        "skill": "K"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe differentiation between Supercomputing and Big Data",
+            "Knowledge of\nSupercomputing and Big Data"
+        ],
+        "define": "list items",
+        "skill": "K1.5"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess code quality using different metrics,\ne.g. length of functions, length of files,\nlines of code, complexity metrics, code coverage",
+            "Ability to\nuse static code analysis tools in order to calculate\nthe metrics (e.g. http://cppcheck.sourceforge.net/)",
+            "Ability to\nidentify bad code structures (known as bad smells)\nin order to assess the quality of the code design",
+            "Knowledge of\nsoftware engineering methods and practices especially\nin the context of high performance computing",
+            "Ability to\ndevelop parallel programs and to apply software\nengineering methods and best practices"
+        ],
+        "define": "list items",
+        "skill": "SE5.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nappropriately document the entire software system",
+            "Ability to\nto provide a user documentation",
+            "Ability to\nprovide a documentation for developers (e.g. describing the\nsoftware architecture, for extending the software etc.)"
+        ],
+        "define": "list items",
+        "skill": "SE7"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nclassify releases according to release categories (e.g. major, minor, emergency fix)",
+            "Ability to\nplan and manage releases of scientific software and to document\nthe release including the release notes",
+            "Ability to\napply best practices to make a release identifiable via version numbers\nusing appropriate version numbering scheme (e.g.\nusing the version control system)",
+            "Ability to\nfind the best release management process for the team\n(e.g. dependending on team size etc.)",
+            "Knowledge of\nthe basics of release management and what the benefits are of\napplying a release management process in the context of high performance computing\n\"fault\", \"failure\", and \"error\"",
+            "Knowledge of\nthe differences between Major Release, Minor Release,\nEmergency Fix (and potentially other types of releases)\nand what should be contained in each of them",
+            "Knowledge of\nthe tasks and steps of release management",
+            "Knowledge of\nthe steps of the deployment process of the release\nversion and the required dependencies",
+            "Knowledge of\nbest practices of making releases identifiable via version numbers\nusing appropriate version numbering scheme (e.g.\nusing the version control system)",
+            "Knowledge of\nthe lifecycle of a release (including states such as stable, unstable)",
+            "Knowledge of\ndifferent frameworks of release planning and management, e.g. SCRUM release planning or ITIL",
+            "Ability to\napply frameworks of release planning and management like SCRUM release planning or ITIL"
+        ],
+        "define": "list items",
+        "skill": "SE3.4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\napply domain decomposition strategies",
+            "Ability to\napply simple scheduling algorithms\nlike task farming to achieve an appropriate\ndistribution of the workloads across the\nmultiple computing resources of the HPC\nsystem",
+            "Ability to\napply more sophisticated approaches\ne.g. based on tree structures like\ndivide-and-conquer or work-stealing to\nachieve an appropriate distribution of the\nworkloads across the multiple computing\nresources of the HPC system"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.4"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\nassess parallel concepts typically\nused for shared memory systems,\ne.g. to exploit temporal locality by data\nreuse with an efficient utilization of the\nmemory hierarchy",
+            "Ability to\nassess concepts like software\npipelining, and vectorization\nprinciples",
+            "Ability to\nassess the influence of control\ndependencies by jumps, branches, and\nfunction calls, e.g. on pipeline filling",
+            "Ability to\nassess the applicability of parallel\nlanguage extensions like OpenACC, and C++ AMP",
+            "Ability to\nassess concepts like software\npipelining, e.g. to optimize loops by\nout-of-order execution",
+            "Ability to\nassess the applicability of parallel\nlanguage extensions like CUDA as well as their\ninteroperability (e.g. combining OpenACC and CUDA)",
+            "Ability to\nunderstand race conditions and to use\nsynchronization mechanisms to avoid them",
+            "Ability to\nunderstand the problems that may\nresult from erroneous use of\nsynchronization mechanisms (e.g. deadlocks)",
+            "Ability to\nassess data dependency situations,\ni.e. an instruction reading the data\nwritten by a preceding instruction in the\nsource code, and anti dependencies, i.e. an\ninstruction having to read data before a\nsucceeding instruction overwrites it,\nand output dependencies, i.e. instructions\nwriting to the same memory location",
+            "Ability to\nuse data parallelism, e.g. applying\nparallel streams of identical instructions\nto different elements of appropriate data\nstructures such as arrays",
+            "Knowledge of\nthe concept of functional\nparallelism, i.e. executing a set of\ndistinct functions possibly using the same\ndata",
+            "Ability to\nassess the applicability of parallel\nlanguage extensions like OpenMP"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nhow performance bounds of the\nvarious components of the HPC system\n(e.g. CPU, caches, memory)\ncan limit the overall performance\nof a parallel program",
+            "Knowledge of\nhow performance bounds of the\nvarious components of the HPC system\n(e.g. network, I/O)\ncan limit the overall performance\nof a parallel program"
+        ],
+        "define": "list items",
+        "skill": "K2.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Ability to\ndetect performance issues and\nbottlenecks caused,\nfor example, by inefficient programming,\nmemory accesses, I/O operations,\ncache-misses, page-faults, and\nparallelization overheads",
+            "Ability to\nuse advanced performance analysis\ntools like Vampir",
+            "Ability to\nuse the standard MPI profiling\ninterface (PMPI) to control\nthe built-in performance\nanalysis functionality in MPI",
+            "Ability to\nget the base data for tuning the\nperformance of parallel programs by\nprofiling",
+            "Ability to\nassess how different views of the\nprofiling data (e.g. timeline graphs and\ncommunication matrices to illustrate the\ntraffic between processes) can give\ninsights in the runtime behavior of the\nprogram",
+            "Ability to\nuse performance analysis tools like\nScoreP, Scalasca",
+            "Ability to\nuse environment variables\nlike $I_MPI_STATS\nto control the built-in performance\nanalysis functionality in MPI"
+        ],
+        "define": "list items",
+        "skill": "PE2.2"
+    },
+    {
+        "attribute": "description",
+        "value": [
+            "Knowledge of\nthe impact of a cluster nodes type (e.g. CPU\ntype, main memory expansion, or GPU extensions)\nand of the storage media type (SSD, disk, or e.g.\ntape for long term archiving (LTA) purposes) on its costs",
+            "Knowledge of\nhow to assess the costs for the\ninfrastructure of data and computing centers as\nwell as their personnel costs",
+            "Knowledge of\neconomic and business aspects, e.g.\nbreak-even considerations, when personnel costs for\ntuning a parallel program and savings through\nspeedups achieved are compared",
+            "Knowledge of\nhow to assess runtime costs for jobs"
+        ],
+        "define": "list items",
+        "skill": "K5"
+    }
+]

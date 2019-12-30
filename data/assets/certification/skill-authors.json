@@ -1,0 +1,767 @@
+[
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K3.4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE3.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "USE1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE4.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K3.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE6.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "USE2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE6.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE2.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE4.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "USE1.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K3.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE2.5"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K1.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K1.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K2.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE5.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE5"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE6"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE7.4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE4.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE6.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE5.4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE2.4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.5"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE7.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE5"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE4.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "USE4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE3.5"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE4.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE3.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt"
+        ],
+        "define": "list items",
+        "skill": "R"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE3.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "PE"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K3.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "USE3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt"
+        ],
+        "define": "list items",
+        "skill": "ST"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE4.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE7.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "USE1.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE2.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "USE"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "USE1.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt"
+        ],
+        "define": "list items",
+        "skill": "TC"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE7.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE2.3"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE2.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K1.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K1.4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE5.1"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "K"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K1.5"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE5.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE7"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "Kai Himstedt",
+            "Nathanael H\u00fcbbe",
+            "Julian Kunkel",
+            "Sandra Schr\u00f6der",
+            "Hinnerk St\u00fcben"
+        ],
+        "define": "list items",
+        "skill": "SE3.4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.4"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "SE1.2.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K2.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "PE2.2"
+    },
+    {
+        "attribute": "authors",
+        "value": [
+            "HHCC Team"
+        ],
+        "define": "list items",
+        "skill": "K5"
+    }
+]

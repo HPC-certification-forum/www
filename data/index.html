@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<h2>The HPC Certification Forum</h2>
+
+<p><em>The <a href="/about/">HPC Certification Forum (HPC-CF)</a> provides an international HPC certification program that clearly categorizes and defines a curriculum for HPC practitioners.</em></p>
+
+<h2>News</h2>
+
+<div class="home">
+  {% for post in paginator.posts%}
+  <div class="post postContent">
+    <span  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%Y-%m-%d" }}:</time>
+    </span>
+    {% if post.tag != null %}
+    <span class="postTag">
+      {{post.tag}}
+    </span>
+    {% endif %}
+    <span class="postTitle">
+    {% if post.nolink != true %}
+    <a class='postLink' href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+    {% else %}
+    {{post.title}}
+    {% endif %}
+    </span>
+    <br/>
+    <span class="postExt">
+      {{ post.description }}
+    </span>
+  </div>
+<!-- {{ post.content | strip_html | truncate:200}} -->
+
+  {% endfor %}
+  {% if paginator.total_pages > 1 %}
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        <a class="paginationLink" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em class="paginationLink paginationLinkCurrent">{{ page }}</em>
+      {% elsif page == 1 %}
+        <a class="paginationLink" href="/">{{ page }}</a>
+      {% else %}
+        <a class="paginationLink" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a class="paginationLink" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% endif %}
+    </nav>
+  {% endif %}
+</div>
+
+<h2>Contributing Institutions</h2>
+
+<div>We have contributors from the following institutions:</div>
+
+<p>
+<div class="container institutions">
+<div class="row" style="background-color:white; padding-top:10px">
+{% for inst in site.data.contr-inst %}
+  {% include institution-column.html institution=inst %}
+{% endfor %}
+</div>
+</div>
+</p>
+
+<h2>Contact us</h2>
+<p>
+Feel free to reach out to us via the email address of the executive board: <a href="mailto:hpccf-board@hpc-certification.org">hpccf-board@hpc-certification.org</a>.
+</p>

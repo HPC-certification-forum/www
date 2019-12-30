@@ -1,0 +1,20 @@
+- name: University of Reading
+  url: http://www.reading.ac.uk
+  image: http://www.reading.ac.uk/web/multimediafiles/legacy-uor-home.png
+- name: Universität Hamburg
+  url: http://www.uni-hamburg.de
+  image: https://assets.rrz.uni-hamburg.de/assets/uhh-logo-4ec3691b46570436d95977e2c0c368646d0c24d722425dd674f48b1c44585e81.svg
+- name: EPCC
+  url: https://www.epcc.ed.ac.uk/
+  image: https://www.epcc.ed.ac.uk/sites/all/themes/epcc/images/epcc-logo.png
+- name: DDN
+  url: https://www.ddn.com/
+  image: /assets/img/ddn.png
+- name: University of Melbourne
+  url: https://www.unimelb.edu.au/
+  image: https://d2glwx35mhbfwf.cloudfront.net/v2.0.1/logo.svg
+- name: DataSwing
+  image: /assets/img/dataswing_logo.png
+- name: Johannes Gutenberg Universität Mainz
+  image: /assets/img/jgu_logo_kasten.jpg
+  url: http://www.uni-mainz.de/eng/
