@@ -25,10 +25,10 @@ noContainer: true
               dirname + "skill-links.json",
               dirname + "skill-tree-structure.json"
           ],
-          "reduced": [
-              dirname + "skill-data.json",
-              dirname + "skill-descriptions.json",
-              dirname + "skill-tree-structure.json"
-          ],
+#          "reduced": [
+#              dirname + "skill-data.json",
+#              dirname + "skill-descriptions.json",
+#              dirname + "skill-tree-structure.json"
+#          ],
       });
 </script>
