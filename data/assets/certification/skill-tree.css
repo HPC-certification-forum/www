@@ -18,6 +18,12 @@ body { background: #fff; }
 }
 .SkillTree .node img { width: 100%; height: 100%; }
 
+.SkillTree .node.empty {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0px;
+}
+
 .SkillTree .collapse-switch { width: 100%; height: 100%; border: none; }
 .SkillTree .node.collapsed {
 	background-color: #eeffaa;
