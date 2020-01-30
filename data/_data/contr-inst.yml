@@ -16,8 +16,11 @@
 - name: DataSwing
   image: /assets/img/dataswing_logo.png
 - name: Johannes Gutenberg Universität Mainz
-  image: /assets/inst/gu.jpg
+  image: /assets/img/jgu_logo_kasten.jpg
   url: http://www.uni-mainz.de/eng/
+- name: Goethe Univesität Frankfurt
+  image: /assets/inst/gu.jpg
+  url: https://www.goethe-university-frankfurt.de/en
 - name: Center for Scientific Computing (CSC)
   image: /assets/inst/csc.png
   url: https://csc.uni-frankfurt.de/
