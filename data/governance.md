@@ -48,7 +48,7 @@ Before doing so, the steering board will contact the nominee and assess the situ
 
 **Timeline:**
   * Nomination until April 30st
-  * Announcement of candidates by Program Chair: first week of April
+  * Announcement of candidates by Program Chair: first week of May
   * Voting takes place until May 31st
 
 If a board members resigns/steps down during an election period having less than 6 month in the current period, the current steering board can elect a potential candidate to fulfill the role for the rest of the period.
