@@ -83,7 +83,7 @@ The executive roles for the board are:
      * Curate a subtree
      * Funnels change requests of members
   * **Examination curator (EC)**
-     * Manages examina
+     * Manages the exam process and the question pool
   * **Publicity chair (PRC)**
      * Develops and implements PR strategy
 
