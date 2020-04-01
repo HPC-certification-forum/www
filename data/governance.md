@@ -13,7 +13,7 @@ The governance structures with the members of the forum are described on this pa
 
 The current steering board is:
 
-  * Program chair: **Julian Kunkel** (University of Reading)
+  * General chair: **Julian Kunkel** (University of Reading)
   * Skill-tree curator: **Kai Himstedt** (University of Hamburg)
   * Topic curators:
     * HPC Knowledge: **Lev Lafayette** (University of Melbourne)
@@ -36,11 +36,11 @@ A time slot should be reserved for the new steering board to present an updated 
 
 Voting is done publicly on a Slack channel "election" in the HPC Certification forum.
 Everyone can nominate someone at the channel or self-nominate themself by posting a message with the name of the nominee, the position, and a brief description.
-The brief description should state why the nominee is qualified/seeks to become chair member for the given position.
+The brief description should state why the nominee is qualified/seeks to become responsible for the given position.
 
-At the end of the nomination phase, the program chair will compose a list of candidates for each position.
+At the end of the nomination phase, the general chair will compose a list of candidates for each position.
 HPCCF members can then vote using thumbs up on the candidate(s) they like.
-The members are encouraged to vote based on past contributions made by a nominee and the potential they see by appointing the chair in the initiative.
+The members are encouraged to vote based on past contributions made by a nominee and the potential they see by appointing the member to chair the respective activity in the initiative.
 
 Members can send any concern regarding a nominee privately to the board (either by Slack or by Email).
 By providing good reasons that a candidate is not suitable, the steering board can exclude a candidate from the nominee list.
@@ -48,7 +48,7 @@ Before doing so, the steering board will contact the nominee and assess the situ
 
 **Timeline:**
   * Nomination until April 30st
-  * Announcement of candidates by Program Chair: first week of May
+  * Announcement of candidates by the general chair: first week of May
   * Voting takes place until May 31st
 
 If a board members resigns/steps down during an election period having less than 6 month in the current period, the current steering board can elect a potential candidate to fulfill the role for the rest of the period.
@@ -73,18 +73,18 @@ Membership to the forum is free.
 The direction of this initiative is managed by the steering board.
 The executive roles for the board are:
 
-  * **Program chair (PC)**:
+  * **General Chair**:
     * Chairs the overall executive board
     * Chairs meetings and conference calls
   * **Skill-tree curator (STC)**:
     * Decides new curriculum releases
     * Merges changes suggested by TC
   * **Topic curator (TC)**
-     * Curate a subtree
+     * Curates a subtree
      * Funnels change requests of members
   * **Examination curator (EC)**
      * Manages the exam process and the question pool
-  * **Publicity chair (PRC)**
+  * **Publicity chair (PC)**
      * Develops and implements PR strategy
 
 The steering board members are full members elected annually during the general assembly.
