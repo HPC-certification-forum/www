@@ -21,7 +21,7 @@ We welcome pull requests and contributions to the skill tree and tools.
 
 ## Meetings
 
-Join our [Slack Channel](https://join.slack.com/t/hpc-certification/shared_invite/enQtMzUwNzU3NzM2MTkzLTAzZWM3NDg0N2I2ZmQwOWI5ZGUwNjNlNDgzM2RmOTM3ZWRjNjIxYTc5NzUxYTJhNmRlNmM5YmE1NDY3YzkzYzA).
+Join our [Slack Channel](https://join.slack.com/t/hpc-certification/shared_invite/zt-4h4w3ldt-wrG_URr6u6YYUK5Ija6K0Q).
 
 We organize meet on a monthly basis to discuss the status.
 The meetings are open for anyone that is interested to participate.
