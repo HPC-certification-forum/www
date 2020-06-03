@@ -43,10 +43,13 @@ function validate_question_submission($id){
     <head>
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Submission Form for Exam Questions</title
-      <link rel="stylesheet" href="/css/question-submission.css">
+    	<title>Submission Form for Exam Questions</title>
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <link rel="icon" href="/assets/favicon.ico">
     </head>
     <body id="inner">
+    <main role="main" class="container">
+    <div class ="row justify-content-md-center">
     <?php
       $file = $id . ".txt";
       if(! file_exists($file)){
@@ -54,8 +57,8 @@ function validate_question_submission($id){
         exit(0);
       }
       $name = clean_str($_POST["los"]);
-      if($name == "unselected"){
-        print("<h1>You must select a valid learning objective</h1>");
+      if($name == "NA"){
+        print("<h1 style='color:red'>You must select a valid learning objective</h1><p>Please return with your browser to the previous page and fix the error.</p>");
         exit(0);
       }
       $path = "/home/www/hpccertification/skills/" . $id;
@@ -86,6 +89,8 @@ function validate_question_submission($id){
         echo("<h1 style='color:red'>Error submitting the question, please contact HPCCF!</h1>");
       }
     ?>
+    </div>
+    </main>
     </html>
     <?php
 }
@@ -97,10 +102,13 @@ function view_question_submit($id){
   <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Submission Form for Exam Questions</title
-    <link rel="stylesheet" href="/css/question-submission.css">
+  	<title>Submission Form for Exam Questions</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="icon" href="/assets/favicon.ico">
   </head>
   <body id="inner">
+  <main role="main" class="container">
+  <div class ="row justify-content-md-center">
   <?php
   $data = load_skill($id);
   ?>
@@ -112,12 +120,13 @@ function view_question_submit($id){
   <form action="<?php echo(get_actual_link()); ?>" method="POST">
     <h2>License terms</h2>
     <p>In order to accept your contribution(s), we must ask your consent to our license/contribution terms.
+    <br/>
     By submitting a question <b>you explicitly agree</b> <a href="http://hpc-certification.org/contribute-license/">to the terms for contributors</a>.</p>
 
     <h3> Contact (Optional) </h3>
 
     <p>
-    <em>We give credit to all contributors of whom we select questions. If you provide your details here, we will add you to the contributor list. Leave it blank to submit a question anonymously.</em>
+    <em>We give credit to all contributors of whom we select questions. If you provide your details here, we will add you to the contributor list. <br/>Leave it blank to submit a question anonymously.</em>
 
     <div>
     <label for="contact">Your name &lt;Email&gt;</label>
@@ -163,7 +172,9 @@ function view_question_submit($id){
     <p>
     <?php
     for($i=0; $i < 15; $i++){
-      echo('<div>Correct</label><input type="checkbox" name="o' . $i . '" value="o' . $i . '"><label for="a' . $i . '">Answer</label><textarea type="text" name="a' . $i . '" value=""  rows="1" cols="100"></textarea><label for="o' . $i . '"></div>');
+      echo('<div class="row"><div class="col-2">Correct </label><input type="checkbox" name="o' . $i . '" value="o' . $i . '"></div>
+      <div class="col-m"><textarea type="text" name="a' . $i . '" value=""  rows="2" cols="60"></textarea><label for="o' . $i . '">
+      </div></div>'); # <label for="a' . $i . '">Answer</label>
     }
     ?>
 
@@ -171,7 +182,8 @@ function view_question_submit($id){
 
     <input type="submit" value="Submit">
   </form>
-
+  </div>
+  </main>
   </html>
   <?php
 }
