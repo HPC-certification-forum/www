@@ -44,6 +44,7 @@ function validate_question_submission($id){
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<title>Submission Form for Exam Questions</title
+      <link rel="stylesheet" href="/css/question-submission.css">
     </head>
     <body id="inner">
     <?php
@@ -97,18 +98,15 @@ function view_question_submit($id){
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<title>Submission Form for Exam Questions</title
+    <link rel="stylesheet" href="/css/question-submission.css">
   </head>
   <body id="inner">
   <?php
   $data = load_skill($id);
   ?>
-
-  <h3>Skill</h3>
-  <p><?php echo($data["title"]); ?></p>
-
-  <h3>Aim</h3>
-  <p>
-  <?php echo(implode("<br>", $data["aim"])); ?>
+  <h1>Contributing of a question</h1>
+  <p><em>The process of contributing a question is described in our article <a href="TODO">here</a>.</em>
+  At the moment, the tool chain implements multiple-choice questions from our wishlist which is why we prefer them.
   </p>
 
   <form action="<?php echo(get_actual_link()); ?>" method="POST">
@@ -127,6 +125,13 @@ function view_question_submit($id){
     </div>
     </p>
 
+    <h2>Skill</h2>
+    <p><?php echo($data["title"]); ?></p>
+
+    <h3>Aim</h3>
+    <p>
+    <?php echo(implode("<br>", $data["aim"])); ?>
+    </p>
 
     <h3><label for="los">Assessed learning objective</label></h3>
     <p>
