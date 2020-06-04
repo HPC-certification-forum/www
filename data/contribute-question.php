@@ -105,6 +105,8 @@ function view_question_submit($id){
   	<title>Submission Form for Exam Questions</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="icon" href="/assets/favicon.ico">
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/testGui.js"></script>
   </head>
   <body id="inner">
   <main role="main" class="container">
@@ -180,9 +182,15 @@ function view_question_submit($id){
 
     </p>
 
-    <input type="submit" value="Submit">
+    <input type="submit" class="btn btn-primary" value="Submit">
+    <input type="button" class="btn" value="Preview" onclick='genQuestion()'>
+
   </form>
   </div>
+
+  <h3 style="margin-top:2em">Preview (all answers, normally only a subset is selected)</h3>
+  <div class="test" id="testContainer"></div>
+
   </main>
   </html>
   <?php

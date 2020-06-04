@@ -1,4 +1,24 @@
 var gTestGui = {};
+
+var genQuestion = function(){
+  var inputs = $('textarea');
+  var question = $('textarea#question').val();
+  var answers = [];
+
+
+
+  for(var i in inputs){
+    var e = inputs[i];
+    if(e.name && /a[0-9]+/g.exec(e.name)){
+      if(e.value != ""){
+        answers.push({ "text": e.value });
+      }
+    }
+  }
+
+  gTestGui.startTest({"questions":[ {"question": question,"type":"select multiple","answers": answers}]});
+}
+
 var initTestGui = function() {
 	gTestGui.containerTag = $("#testContainer");
 	gTestGui.container = $("#testContainer")[0];
@@ -112,21 +132,24 @@ var initTestGui = function() {
 		}
 
 		//Create the block with submission details.
-		var metadata = JSON.parse($("#testMetadata")[0].innerHTML);
-		var submissionFields = gTestGui.makeElement("fieldset", "submission-fieldset", "<legend>Submitter information</legend>");
-		submissionFields.appendChild(gTestGui.makeElement("p", "submiter-info",
-			"Name: <b>" + metadata.name + "</b><br>" +
-			"Email: <b>" + metadata.email + "</b><br>" +
-			"Affiliation: <b>" + metadata.affiliation + "</b>"));
-		submissionFields.appendChild(gTestGui.makeElement("p", "submission-warning",
-			"Please check the correctness of the Name, Email address, and Affiliation.<br>" +
-			"<b>Test submissions cannot be undone, the values above will be used to create your certificate</b>."));
-		var submitButton = gTestGui.makeElement("input", "btn btn-primary");
-		submitButton.setAttribute("type", "button");
-		submitButton.setAttribute("value", "Submit the exam");
-		submissionFields.appendChild(submitButton);
-		gTestGui.container.appendChild(submissionFields);
-		submitButton.onclick = function(){ gTestGui.submitTest(test); };
+    var data = $("#testMetadata");
+    if(! data){
+  		var metadata = JSON.parse(data[0].innerHTML);
+  		var submissionFields = gTestGui.makeElement("fieldset", "submission-fieldset", "<legend>Submitter information</legend>");
+  		submissionFields.appendChild(gTestGui.makeElement("p", "submiter-info",
+  			"Name: <b>" + metadata.name + "</b><br>" +
+  			"Email: <b>" + metadata.email + "</b><br>" +
+  			"Affiliation: <b>" + metadata.affiliation + "</b>"));
+  		submissionFields.appendChild(gTestGui.makeElement("p", "submission-warning",
+  			"Please check the correctness of the Name, Email address, and Affiliation.<br>" +
+  			"<b>Test submissions cannot be undone, the values above will be used to create your certificate</b>."));
+  		var submitButton = gTestGui.makeElement("input", "btn btn-primary");
+  		submitButton.setAttribute("type", "button");
+  		submitButton.setAttribute("value", "Submit the exam");
+  		submissionFields.appendChild(submitButton);
+  		gTestGui.container.appendChild(submissionFields);
+  		submitButton.onclick = function(){ gTestGui.submitTest(test); };
+    }
 	};
 
 	//Signal to the user that an error occurred.
@@ -138,16 +161,18 @@ var initTestGui = function() {
 $().ready(function() {
 	initTestGui();
 
-	//Load the individualized test.
-	$.ajax({
-		url: gTestGui.containerTag.attr("data-test-url"),
-		dataType: "json",
-		mimeType: "application/json",
-		success: gTestGui.startTest,
-		error: function(jqXHR, textStatus, error) {
-			console.log("jqXHR: '", jqXHR, "'");
-			console.log("textStatus: '", textStatus, "'");
-			console.log("error: '", error, "'");
-		}
-	});
+  if(gTestGui.containerTag.attr("data-test-url")){
+  	//Load the individualized test.
+  	$.ajax({
+  		url: gTestGui.containerTag.attr("data-test-url"),
+  		dataType: "json",
+  		mimeType: "application/json",
+  		success: gTestGui.startTest,
+  		error: function(jqXHR, textStatus, error) {
+  			console.log("jqXHR: '", jqXHR, "'");
+  			console.log("textStatus: '", textStatus, "'");
+  			console.log("error: '", error, "'");
+  		}
+  	});
+  }
 });
