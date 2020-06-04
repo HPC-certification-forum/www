@@ -1,0 +1,41 @@
+{% assign pub = include.pub %}
+
+{% if pub.link %}
+    {% assign pub_url = pub.link %}
+{% else %}
+    {% capture pub_url %}{{site.base}}{{pub.url}}.html{% endcapture %}
+{% endif %}
+<li class="list-group-item pub">
+        {% if pub.notitle != true %}
+            <b>
+              <!--<a class='postLink' href="{{site.baseurl}}{{pub.url}}">-->
+                {{pub.title}}
+              <!-- </a>-->
+            </b>
+        {% endif %}
+        {% if pub.authors != null %}
+            <em>{{ pub.authors }}</em>.
+        {% endif %}
+        {% if pub.published != null %}
+            In {{ pub.published }},
+            {% if pub.published_extra != null %}
+            {{ pub.published_extra }},
+            {% endif %}
+            {% if pub.doi != null %}
+            <a href="https://doi.org/{{ pub.doi }}">DOI: {{ pub.doi }}</a>,
+            {% endif %}
+        {% endif %}
+        {% if pub.version != null %}
+        Version: {{ pub.version }},
+        {% endif %}
+        {{ pub.date | date: "%Y-%m-%d"}}
+    {% if pub.abstract != null %}
+    <div>
+        <em>{{ pub.abstract | markdownify }}</em>
+    </div>
+    {% endif %}
+    {% if pub.download_type %}
+        {% capture init %}{{ pub.image | slice: 0,1 }}{% endcapture %}
+        <a href="{{ pub.download_uri }}" class="mediafile {{pub.download_type}}">{{pub.download_type | upcase }}</a>
+    {% endif %}
+</li>

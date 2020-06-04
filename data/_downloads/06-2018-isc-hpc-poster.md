@@ -1,5 +1,4 @@
 ---
-layout: download
 title:  "ISC-HPC Project Poster"
 subtitle: 'Presented during <a href="http://www.isc-hpc.com">ISC-HPC</a>'
 date:   2018-05-16

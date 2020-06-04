@@ -1,0 +1,30 @@
+{% assign talk = include.talk %}
+
+{% if talk.link %}
+    {% assign talk_url = talk.link %}
+{% else %}
+    {% capture talk_url %}{{site.base}}{{talk.url}}.html{% endcapture %}
+{% endif %}
+<li class="list-group-item talk">
+        {{ talk.date | date: "%Y-%m-%d"}}
+        {% if talk.notitle != true %}
+            <b>
+              {{talk.title}}
+            </b>
+        {% endif %}
+        {% if talk.speaker != null %}
+            <em>{{ talk.speaker }}</em>
+        {% endif %}
+    {% if talk.abstract != null %}
+    <div>
+        <em>{{ talk.abstract | markdownify }}</em>
+    </div>
+    {% endif %}
+    {% if talk.download_type %}
+        {% capture init %}{{ talk.image | slice: 0,1 }}{% endcapture %}
+        <a href="{{ talk.download_uri }}" class="mediafile {{talk.download_type}}">{{talk.download_type | upcase }}</a>
+    {% endif %}
+    {% if talk.video_uri %}
+        <a href="{{ talk.video_uri }}">Video</a>
+    {% endif %}
+</li>

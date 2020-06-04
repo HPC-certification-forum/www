@@ -20,9 +20,25 @@
                 {{  download.subtitle }}
             </h6>
         {% endif %}
+        {% if download.authors != null %}
+        <div>
+            <em>{{ download.authors }}</em>
+        </div>
+        {% endif %}
+        {% if download.published != null %}
+        <div>
+            In {{ download.published }},
+            {% if download.published_extra != null %}
+            {{ download.published_extra }}
+            {% endif %}
+            {% if download.doi != null %}
+            <a href="https://doi.org/{{ download.doi }}">DOI: {{ download.doi }}</a>
+            {% endif %}
+        </div>
+        {% endif %}
         {% if download.date != null %}
         <div>
-            Date: {{ download.date | date: "%Y-%m-%d"}}
+            {{ download.date | date: "%Y-%m-%d"}}
         </div>
         {% endif %}
         {% if download.version != null %}
