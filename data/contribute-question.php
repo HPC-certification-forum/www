@@ -69,7 +69,7 @@ function validate_question_submission($id){
         $data = "#contributor: " . $_POST["contact"] . "\n";
       }
       $data = $data . $_POST["question"] . "\n\n#select multiple\n\n";
-      for($i=0; $i < 15; $i++){
+      for($i=0; $i < 10; $i++){
         $answer = $_POST["a".$i];
         if($answer != ""){
           if(array_key_exists("o" . $i, $_POST)){
@@ -107,6 +107,7 @@ function view_question_submit($id){
     <link rel="icon" href="/assets/favicon.ico">
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/testGui.js"></script>
+    <link rel="stylesheet" href="/css/exam.css">
   </head>
   <body id="inner">
   <main role="main" class="container">
@@ -173,7 +174,7 @@ function view_question_submit($id){
 
     <p>
     <?php
-    for($i=0; $i < 15; $i++){
+    for($i=0; $i < 10; $i++){
       echo('<div class="row"><div class="col-2">Correct </label><input type="checkbox" name="o' . $i . '" value="o' . $i . '"></div>
       <div class="col-m"><textarea type="text" name="a' . $i . '" value=""  rows="2" cols="60"></textarea><label for="o' . $i . '">
       </div></div>'); # <label for="a' . $i . '">Answer</label>
@@ -188,7 +189,8 @@ function view_question_submit($id){
   </form>
   </div>
 
-  <h3 style="margin-top:2em">Preview (all answers, normally only a subset is selected)</h3>
+  <h3 style="margin-top:2em">Preview</h3>
+  <p> Shows all answers, normally only a subset is selected</p>
   <div class="test" id="testContainer"></div>
 
   </main>

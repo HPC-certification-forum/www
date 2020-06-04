@@ -5,13 +5,14 @@ var genQuestion = function(){
   var question = $('textarea#question').val();
   var answers = [];
 
-
-
   for(var i in inputs){
     var e = inputs[i];
     if(e.name && /a[0-9]+/g.exec(e.name)){
       if(e.value != ""){
-        answers.push({ "text": e.value });
+        var txt = e.value;
+        txt = txt.replace(/(?:\r\n|\r|\n)/g, '<br>');
+
+        answers.push({ "text": txt });
       }
     }
   }
@@ -120,8 +121,14 @@ var initTestGui = function() {
 				for(var j in test.questions[i].answers) {
 					var curFieldset = gTestGui.makeElement("fieldset", "answer-fieldset", "");
           curFieldset.appendChild(gTestGui.makeDropdown(i, j))
-          curFieldset.innerHTML += "<span> " + test.questions[i].answers[j].text + "</span>";
-					answersForm.appendChild(curFieldset);
+          var row = gTestGui.makeElement("div", "row", "");
+          var col = gTestGui.makeElement("div", "col col-2", "");
+          col.appendChild(curFieldset);
+          row.appendChild(col);
+          col = gTestGui.makeElement("div", "col col-md", test.questions[i].answers[j].text);
+          row.appendChild(col);
+
+					answersForm.appendChild(row);
 				}
 				answersContainer.appendChild(answersForm);
 			}
