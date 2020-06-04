@@ -6,7 +6,20 @@ div.box{
   background-color: #ddd;
 }
 
-div.box div.label{
-  display: inline-block;
-  margin-bottom: .5rem;
+p.question-text{
+  font-weight: bold;
+}
+
+
+div.answers-description{
+  font-style: italic;
+  color: #666;
+  font-size: small;
+}
+
+div.question-container{
+  padding: 1rem;
+  margin-right: 0;
+  margin-left: 0;
+  border: 0.1em solid black;
 }

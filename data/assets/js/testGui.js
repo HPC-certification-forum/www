@@ -3,10 +3,11 @@ var initTestGui = function() {
 	gTestGui.containerTag = $("#testContainer");
 	gTestGui.container = $("#testContainer")[0];
 
-	gTestGui.selectAnswer = function(questionId, answerId, value) {
+	gTestGui.selectAnswer = function(questionId, answerId) {
+    var value = $( "#question" + questionId + "answer" + answerId + " option:selected" ).text();;
 		if(value == "wrong") {
 			gTestGui.activeTest.questions[questionId].answers[answerId].result = false;
-		} else if(value == "right") {
+		} else if(value == "right" || value == "correct") {
 			gTestGui.activeTest.questions[questionId].answers[answerId].result = true;
 		} else {
 			delete gTestGui.activeTest.questions[questionId].answers[answerId].result;
@@ -18,6 +19,14 @@ var initTestGui = function() {
 		result.setAttribute("class", elementClass);
 		if(content) result.innerHTML = content;
 		return result;
+	};
+
+	gTestGui.makeDropdown = function(questionId, answerId) {
+		var input = gTestGui.makeElement("select", "answer");
+		input.setAttribute("id", "question" + questionId + "answer" + answerId);
+    input.setAttribute("onchange", "gTestGui.selectAnswer(" + questionId + ", " + answerId + ")");
+		input.innerHTML = "<option value='right'>correct</option><option value='unknown' selected>unknown</option><option value='wrong'>wrong</option>";
+		return input;
 	};
 
 	gTestGui.makeRadio = function(questionId, answerId, value, checked) {
@@ -83,18 +92,15 @@ var initTestGui = function() {
 
 			var questionText = gTestGui.makeElement("p", "question-text", test.questions[i].question);
 			questionContainer.appendChild(questionText);
-
+			var answersDesc = gTestGui.makeElement("div", "answers-description", "Mark individual answers as correct or wrong.");
+			questionContainer.appendChild(answersDesc);
 			var answersContainer = gTestGui.makeElement("div", "answer-container");
 			if(test.questions[i].type == "select multiple") {
-				var answersTitle = gTestGui.makeElement("h4", "answers-title", "Mark answers as right or wrong.<br>Zero, one, several, or all of the answers may be correct.");
-				answersContainer.appendChild(answersTitle);
-
 				var answersForm = gTestGui.makeElement("form", "answers-form");
 				for(var j in test.questions[i].answers) {
-					var curFieldset = gTestGui.makeElement("fieldset", "answer-fieldset", "<legend>Answer " + (+j + 1) + ": <b>" + test.questions[i].answers[j].text + "</b></legend>");
-					curFieldset.appendChild(gTestGui.makeRadio(i, j, "wrong", false, test.questions[i].answers[j]));
-					curFieldset.appendChild(gTestGui.makeRadio(i, j, "unknown", true, test.questions[i].answers[j]));
-					curFieldset.appendChild(gTestGui.makeRadio(i, j, "right", false, test.questions[i].answers[j]));
+					var curFieldset = gTestGui.makeElement("fieldset", "answer-fieldset", "");
+          curFieldset.appendChild(gTestGui.makeDropdown(i, j))
+          curFieldset.innerHTML += "<span> " + test.questions[i].answers[j].text + "</span>";
 					answersForm.appendChild(curFieldset);
 				}
 				answersContainer.appendChild(answersForm);
@@ -115,9 +121,9 @@ var initTestGui = function() {
 		submissionFields.appendChild(gTestGui.makeElement("p", "submission-warning",
 			"Please check the correctness of the Name, Email address, and Affiliation.<br>" +
 			"<b>Test submissions cannot be undone, the values above will be used to create your certificate</b>."));
-		var submitButton = gTestGui.makeElement("input", "submit-button");
+		var submitButton = gTestGui.makeElement("input", "btn btn-primary");
 		submitButton.setAttribute("type", "button");
-		submitButton.setAttribute("value", "submit test");
+		submitButton.setAttribute("value", "Submit the exam");
 		submissionFields.appendChild(submitButton);
 		gTestGui.container.appendChild(submissionFields);
 		submitButton.onclick = function(){ gTestGui.submitTest(test); };
