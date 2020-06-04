@@ -1,8 +1,8 @@
 - name: University of Reading
-  url: http://www.reading.ac.uk
-  image: http://www.reading.ac.uk/web/multimediafiles/legacy-uor-home.png
+  url: https://www.reading.ac.uk
+  image: https://www.reading.ac.uk/web/multimediafiles/legacy-uor-home.png
 - name: Universität Hamburg
-  url: http://www.uni-hamburg.de
+  url: https://www.uni-hamburg.de
   image: https://assets.rrz.uni-hamburg.de/assets/uhh-logo-4ec3691b46570436d95977e2c0c368646d0c24d722425dd674f48b1c44585e81.svg
 - name: EPCC
   url: https://www.epcc.ed.ac.uk/
@@ -17,7 +17,7 @@
   image: /assets/img/dataswing_logo.png
 - name: Johannes Gutenberg Universität Mainz
   image: /assets/img/jgu_logo_kasten.jpg
-  url: http://www.uni-mainz.de/eng/
+  url: https://www.uni-mainz.de/eng/
 - name: Goethe Univesität Frankfurt
   image: /assets/inst/gu.jpg
   url: https://www.goethe-university-frankfurt.de/en
