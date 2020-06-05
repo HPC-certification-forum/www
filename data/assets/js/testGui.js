@@ -140,7 +140,7 @@ var initTestGui = function() {
 
 		//Create the block with submission details.
     var data = $("#testMetadata");
-    if(! data){
+    if(data){
   		var metadata = JSON.parse(data[0].innerHTML);
   		var submissionFields = gTestGui.makeElement("fieldset", "submission-fieldset", "<legend>Submitter information</legend>");
   		submissionFields.appendChild(gTestGui.makeElement("p", "submiter-info",
