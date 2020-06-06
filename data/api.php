@@ -10,6 +10,7 @@
   $skill = $_GET["request"];
   $fields = array_key_exists("fields", $_GET) ? $_GET["fields"] : "all";
   $version = array_key_exists("version", $_GET) ? $_GET["version"] : "latest";
+  $format = array_key_exists("format", $_GET) ? $_GET["format"] : "json";
   $q_fields = array();
   foreach(explode(",", $fields) as $field){
     $q_fields[$field] = true;
@@ -54,7 +55,7 @@
     exit(0);
   }
 
-  function retrieve_subtree_skills($dir, $id){
+  function retrieve_subtree_skills($dir, $id, $format){
       $it = new RecursiveDirectoryIterator($dir . $id);
       $data = array();
       $length = strlen($dir);
@@ -65,13 +66,55 @@
 
           $file = substr($file->getPathname(), $length);
           $file = substr($file, 0, strlen($file) - 4);
-          $data[$file] = load_skill($dir . $file);
+
+          if($file == "b" || $file == "leftover") continue; // skip root
+
+          $skill = load_skill($dir . $file);
+          if($format == "js-structure"){
+            // find the skill in the hierarchy
+            $target = explode("/", $file);
+            $cur = & $data;
+            $parent = "";
+            foreach($target as $i){
+              $full = $parent . $i;
+              if(! array_key_exists($full, $cur)){
+                $cur[$full] = array();
+              }
+              $cur = & $cur[$full];
+              $parent = $parent . $i . "/";
+            }
+            if(array_key_exists("subskills", $skill)){
+              foreach($skill["subskills"] as $i){
+                $cur[$i] = array();
+              }
+            }
+          }else if($format == "json"){
+            $data[$file] = $skill;
+          }else if($format == "js-skills"){
+            if(array_key_exists("title", $skill)){
+              $elem = array("id" => $file, // str_replace("/", ".",
+                "define" => "core data",
+                "level" => "Merged",
+                "name"  => $skill["title"]);
+              array_push($data, $elem);
+            }
+          }
+      }
+      if($format == "js-structure"){
+        return  array(array("tree" => array("ST" => $data), "define" => "tree"));
+      }else if($format == "js-skills"){
+        array_push($data, array("id" => "ST",
+                    "define"=> "core data",
+                    "category"=> "All",
+                    "name"=> "Skill Tree",
+                    "level"=> "Merged"));
+
       }
       return $data;
   }
 
-  function generate_subtree_skills($dir, $id){
-    $data = retrieve_subtree_skills($dir, $id);
+  function generate_subtree_skills($dir, $id, $format){
+    $data = retrieve_subtree_skills($dir, $id, $format);
     print(json_encode($data));
     exit(0);
   }
@@ -94,8 +137,7 @@
     $file = $id . ".txt";
 
     if(! file_exists($file)){
-      print('{ "error" : "skill doesn\'t exist"}');
-      exit(0);
+      return array("error" => "skill doesn't exist");
     }
     $data = file_get_contents($file);
     $out = array("title" => "");
@@ -115,11 +157,21 @@
         if($line == "") continue;
         array_push($items, $line);
       }
-      $out[strtolower($first)] = $items;
+      $first = strtolower($first);
+      if($first == "subskills"){
+        // formatted as: * [[skill-tree:bda:1:b]]
+        $res = array();
+        foreach($items as $i){
+          if(preg_match("/.*skill-tree:(.*)\]\].*/i", $i, $match)){
+            array_push($res, str_replace(":", "/",$match[1]));
+          }
+        }
+        $items = $res;
+      }
+      $out[$first] = $items;
     }
     if(! array_key_exists("outcomes", $out)){
-      print('{"error":"skill doesn\'t exist"}');
-      exit(0);
+      return array("error" => "skill is incomplete");
     }
     // append additional information
 
@@ -140,8 +192,8 @@
     generate_list($skill_root, $skill);
   }
 
-  if(endsWith($skill, "/")){
-    generate_subtree_skills($skill_root, $skill);
+  if(endsWith($skill, "/") || $skill == ""){
+    generate_subtree_skills($skill_root, $skill, $format);
   }
 
   $data = load_skill($skill_root . $skill);
