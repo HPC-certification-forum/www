@@ -10,6 +10,29 @@ footer{
   font-size: small;
 }
 
+nav#toc{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4em;
+  float: right;
+
+  ul{
+    margin: 10px;
+  }
+
+  a{
+    color: black;
+  }
+
+  li a.active{
+    text-decoration: none;
+    font-weight: bold;
+    color: #6610f2;
+  }
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 nav a{
   color: gray;
   text-decoration: normal;
@@ -46,6 +69,14 @@ nav a:hover{
   border: 1px solid blue;
   text-decoration: none;
   margin: 0px;
+}
+
+nav li.active a{
+  border: 1px solid white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0px;
+  color: #6610f2;
 }
 
 footer{

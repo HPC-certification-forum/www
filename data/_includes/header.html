@@ -10,8 +10,11 @@
       {% assign sorted_pages = site.pages | sort:"order" %}
       {% for sitePage in sorted_pages %}
       {% if sitePage.title and sitePage.hidden == null %}
-
+      {% if sitePage.url == page.url %}
       <li class="nav-item active">
+      {% else %}
+      <li class="nav-item">
+      {% endif %}
         <a class="nav-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
       </li>
       {% endif %}

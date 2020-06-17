@@ -14,7 +14,10 @@ The HPC community has always considered the training of new and existing HPC pra
 We are establishing an International HPC Certification program that would clearly categorize, define and examine them similarly to a school curriculum.
 Ultimately, we aim for the certificates to be recognized and respected by the HPC community and industry.
 
-## Benefits of an international HPC Certification program
+## Benefits
+
+An international HPC Certification program benefits HPC practitioners and data centers.
+
   * HPC practitioners
     *  Increase motivation to participate as the certificates are recognized in a CV
     *  Validate knowledge via tests
@@ -48,6 +51,59 @@ The following list of people contribute directly or indirectly to the HPC certif
 {% endfor %}
 </ul>
 -->
+
+## Roles
+
+The roles within the forum are as follows.
+
+### Members
+
+Membership to the forum is free.
+
+  * Associated member
+    * Anyone and any institution can become an associated member to the forum.
+  * Full member
+    * Everyone actively contributing to the project is considered to be a full member. We anticipate a contribution of a few hours per month.
+    * Full members have voting rights on the annual general assembly.
+
+### Steering Board
+
+The direction of this initiative is managed by the steering board.
+The executive roles for the board are:
+
+  * **General Chair**:
+    * Chairs the overall executive board
+    * Chairs meetings and conference calls
+  * **Skill-tree curator (STC)**:
+    * Decides new curriculum releases
+    * Merges changes suggested by TC
+  * **Topic curator (TC)**
+     * Curates a subtree
+     * Funnels change requests of members
+  * **Examination curator (EC)**
+     * Manages the exam process and the question pool
+  * **Publicity chair (PC)**
+     * Develops and implements PR strategy
+
+The steering board members are full members elected annually during the general assembly.
+
+## Current steering board
+
+The current steering board is:
+
+  * General chair: **Julian Kunkel** (University of Reading)
+  * Skill-tree curator: **Kai Himstedt** (University of Hamburg)
+  * Topic curators:
+    * HPC Knowledge: **Lev Lafayette** (University of Melbourne)
+    * Performance Engineering: **Anja Gerbes** (University of Frankfurt)
+    * Use of the HPC Environment: **Jean-Thomas Acquaviva** (DDN)
+    * Sofware Development: **Waseem Kamleh** (University of Adelaide)
+    * Administration: **Sharan Kalwani** (DataSwing)
+    * Big Data: **Cristiana Dinea** (NVIDIA)
+  * Examination curator: **Christian Meesters** (University of Mainz)
+  * Publicity chair: **Weronika Filinger** (EPCC)
+  * Webpage curator: **We are looking for someone to take this position! Contact the board!**
+
 
 ## Contact us
 Feel free to reach out to us via the email address of the executive board: <a href="mailto:hpccf-board@hpc-certification.org">hpccf-board@hpc-certification.org</a>.

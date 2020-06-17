@@ -4,11 +4,11 @@
   {% include head.html %}
 
   {% if page.backgroundID != null %}
-  <body id="{{page.backgroundID}}">
+  <body id="{{page.backgroundID}}" data-spy="scroll" data-target="#toc">
   {%else%}
-  <body>
+  <body data-spy="scroll" data-target="#toc">
   {%endif%}
-  {% include header.html %}
+  {% include header.html page=page %}
 
         {% if page.noContainer %}
         <div id="main" style="margin-top:80px">
@@ -18,6 +18,8 @@
         {%else%}
 
         <main role="main" class="container">
+
+        <nav id="toc" data-toggle="toc"></nav>
 
         <div class="row justify-content-md-center">
         {% if page.containerType != null %}
