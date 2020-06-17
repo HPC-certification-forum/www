@@ -4,15 +4,15 @@ layout: default
 
 <h2>The HPC Certification Forum</h2>
 
-<p><em>The main goal of the  <a href="/about/">HPC Certification Forum (HPC-CF)</a></em> is to ease the provision and uptake of training by clearly categorising, defining and eventually assessing the skills required to efficiently use HPC resources.</p>
+<p><em>The goals of the  <a href="/about/">HPC Certification Forum (HPC-CF)</a></em> are:</p>
 
-<p>
-The diversification of HPC practitioners challenges the traditional training approaches, which are not able to satisfy the specific needs of users, often coming from non-traditionally HPC disciplines and only interested in learning a particular set of skills.
-HPC practitioners are expected to have various HPC skills, however, those “skills”  have not been well-defined until now. The ability to speak a common language -- among HPC educators and users  -- is critical.
-<br>
-The HPCCF strives to identify this set of skills for HPC users and reflects this in a <a href="/skills/">skill-tree</a>.
-It is our aim to thereby facilitate course offers across HPC sites and to provide a certification procedure for HPC practitioners.
-</p>
+<ul>
+  <li>Standardizing the HPC knowledge representation into fine-grained competences</li>
+  <li>Establishing international certificates attesting knowledge</li>
+  <li>Supporting an ecosystem around the HPC competences</li>
+</ul>
+
+<p style="font-size:small;">By HPC knowledge we are inclusive and cover explicit skills relevant to practitioners (users, administrators, ...) of parallel computing resources including data centers and cloud environments.</p>
 
 <h2>News</h2>
 
@@ -33,10 +33,12 @@ It is our aim to thereby facilitate course offers across HPC sites and to provid
     {{post.title}}
     {% endif %}
     </span>
+    {% if post.description != "" %}
     <br/>
     <span class="postExt">
       {{ post.description }}
     </span>
+    {% endif %}
   </div>
 <!-- {{ post.content | strip_html | truncate:200}} -->
 

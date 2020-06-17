@@ -10,8 +10,11 @@ backgroundID: rack
 
 The HPC community has always considered the training of new and existing HPC practitioners to be of high importance to its growth. The significance of training will increase even further in the era of Exascale when HPC encompasses even more scientific disciplines. This diversification of HPC practitioners challenges the traditional training approaches, which are not able to satisfy the specific needs of users, often coming from non-traditionally HPC disciplines and only interested in learning a particular set of skills. HPC centres are struggling to identify and overcome the gaps in users’ knowledge. How should we support prospective and existing users who are not aware of their own knowledge gaps?  
 
+The diversification of HPC practitioners challenges the traditional training approaches, which are not able to satisfy the specific needs of users, often coming from non-traditionally HPC disciplines and only interested in learning a particular set of skills.
+HPC practitioners are expected to have various HPC skills, however, those “skills” have not been well-defined until now. The ability to speak a common language -- among HPC educators and users  -- is critical.
 
-We are establishing an International HPC Certification program that would clearly categorize, define and examine them similarly to a school curriculum.
+The HPCCF strives to identify this set of [competences](/skills/) for HPC users.
+It is our aim to thereby facilitate course offers across HPC sites and to provide a certification procedure for HPC practitioners.
 Ultimately, we aim for the certificates to be recognized and respected by the HPC community and industry.
 
 ## Benefits
