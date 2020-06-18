@@ -16,12 +16,17 @@ This is achieved by mapping competences into skills, organize them into a tree, 
 
 A HPC-relevant competence of theoretical and/or practical nature.
 
+
 The definition of one skill includes the sections:
   * ID: Identifier according to its position in the skill tree. Each skill may have three levels indicated by the last character of the ID: Basic, Intermediate, or Advanced
   * Name: A name capturing the essence of the skill
   * Background: Provides brief information motivating the need for the skill and how it fits into the bigger picture with other skills. The background is easily understood by a wide audience.
   * Aim: Describe the purpose of the skills, but doesn't really include a list of what a practitioner will learn or do. Explaining what a skill is trying to achieve is not the same as saying how it should be done. Typically a skill has 1-2 aims.
   * Learning Outcomes (LOs):  List of items that define briefly what practitioners will learn. The objectives are statements that prospective learners are able to do. They should clearly describe or define an action bringing about a measurable/quantifiable increase in understanding of that skill. On the leaf-level, they must clearly provide examinable learning objectives. A learning objective can use subitems to define this learning objective further. No other structural element is allowed.
+
+We expect the practitioners to acquire the lower levels before progressing to more complex levels.
+The basic level should cover the most relevant aspect of the skill (needed by anyone that uses the skill), whereas the intermediate (used for common exceptional cases) and expert levels (used in special circumstances) are needed only for a subset of users.
+Typically, an institution has only few experts, if any at all.
 
 The definition of aims and outcomes follows literature for higher education, see [learning outcomes](https://www.heacademy.ac.uk/system/files/assessment-learning-outcomes.pdf).
 

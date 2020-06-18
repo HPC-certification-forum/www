@@ -19,7 +19,7 @@ Ultimately, we aim for the certificates to be recognized and respected by the HP
 
 ## Benefits
 
-An international HPC Certification program benefits HPC practitioners and data centers.
+An international HPC Certification program benefits the various stakeholders such as practitioners, data centers, and training providers.
 
   * HPC practitioners
     *  Increase motivation to participate as the certificates are recognized in a CV
@@ -29,11 +29,27 @@ An international HPC Certification program benefits HPC practitioners and data c
     *  Understand and compare teaching offers across sites
 
  * Data centers
-   * Increase sharing of teaching materials
-   * Simplifies documentation of taught skills
-   * Identify missing teaching activities
    * Tailor skill-tree specifically to users
    * Correlate lack of skills with efficient use
+
+ * Training provider
+    * Increase sharing of teaching materials
+    * Simplifies documentation of taught skills
+    * Identify missing teaching activities
+
+The program brings multiple benefits to everyone involved in HPC
+teaching and training.
+Making clear what skills are required or recommended for a competent HPC user would be
+helpful to both the HPC service providers and practitioners.
+Training providers could bundle together skills that are most beneficial for specific user roles and scientific domains, which would allow practitioners to browse through skills to quickly identify and learn the skills required to perform their tasks.
+The variety of training offered within our community makes finding the right resources more complicated than it should be – the certification program will provide useful information where the desired skills could be learned.
+
+The examination confirming that a certain set of competencies has been acquired makes the learning process more complete and meaningful. By participating in the program, HPC training providers can increase the visibility of their teaching opportunities and share their resources more effectively.
+The mapping of the skills defined by the program onto the existing training materials should also help to identify any potential gaps and improve the integrity of offered training.
+Finally, the certificates recognised by the whole
+HPC community simplify inter-comparison of independently offered courses and provide additional incentive for participation.
+Overall, the flexibility of the program allows to construct more personalised and just-in-time pathways to learning about HPC.
+
 
 <!--
 ## Contributors

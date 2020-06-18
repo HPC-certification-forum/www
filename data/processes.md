@@ -9,6 +9,7 @@ backgroundID: processes
 {::options parse_block_html="true" /}
 
 This page describes various processes of the HPC Certification Forum.
+Note that not all processes are completely implemented, yet.
 
 
 <div id="accordion">
@@ -229,6 +230,30 @@ This page describes various processes of the HPC Certification Forum.
 <div class="card-header"><h2 id="training_"><a class="card-link" data-toggle="collapse" href="#training">Training material</a></h2></div>
 <div id="training" class="collapse" data-parent="#accordion">
   <div class="card-body">
+  <div id="train-accordion">
+
+The HPC Certification Forum is not developing training material directly or competing with providers of training material.
+However, we support individuals and institutions by endorsing and promoting their training materials and courses in two ways.
+
+Firstly, an author is allowed to indicate on the training material itself or a related promotional material which skills are covered either fully or partially using our seal of endorsment.
+
+Secondly, we will link from our webpage the endorsed training material covering the individual skills and certificates.
+With our tools, we provide various views of the skills with links to suitable training materials that helps to promote compatible training.
+
+
+#### Seal of endorsment
+
+The seal of endorsement indicates that a specific training material covers certain skills from the competence standard.
+<img src="/assets/img/endorsed-training.jpg" title="Example seal for endorsed training" style="width:30%; float:right"/>
+
+The reference to the HPCCF and the seal can be used free of charge under the condition that the developer of the training material registers a link to the material (or course/event) on our webpage using our online form.
+  * Rationale: the HPCCF maintains information about the usage of the seal.
+
+Note that we are not verifing the correct usage of the seal explicitly.
+However, in case the training material or course doesn't deliver the expected material practitioners may complain and we will remove the link to that training material from our webpage.
+
+
+  </div>  
   </div>
 </div>
 </div>
@@ -237,6 +262,78 @@ This page describes various processes of the HPC Certification Forum.
 <div class="card-header"><h2 id="examination_"><a class="card-link" data-toggle="collapse" href="#examination">Certification/Examination</a></h2></div>
 <div id="examination" class="collapse" data-parent="#accordion">
   <div class="card-body">
+  <div id="exam-accordion">
+
+Practitioner can perform examinations to obtain certificates.
+
+  <div class="card">
+  <div class="card-header">
+  <h3 id="exam_"><a class="card-link" data-toggle="collapse" href="#exam">Examination</a></h3></div>
+  <div id="exam" class="collapse" data-parent="#exam-accordion">
+  <div class="card-body">
+
+In order to obtain a certificate, a practitioner must perform an exam.
+The examination process can be started at any time.
+
+To clarify the behavior and privacy the process is documented as follows:
+  1. The practitioner has to register on our exam page (TODO) using their name, email address and optionally an affiliation. On the page, the process is explained, together with policies for privacy and integrity.
+  1. An encrypted token is created on the server that is send to the practitioner by email.
+  Up to this stage, we do not store any information about the examinee on the server.
+  1. The email contains a link that will start the examination. The examinee can choose to start the examination by clicking on it any time (within one week).
+  1. The exam page is loaded and shown. The information about the user and the examination start time is stored in a temporary database.
+  1. The practitioner completes the summative assessment which has a time limit. The assessment will consist of questions drawn from a pool for each of the skills examined.
+  1. Once the examinee submits the completed exam, the selection of answers is transmitted to the server and stored until it is automatically assessed.
+  1. The server performs the validation of the submitted answers at scheduled times. It either initiates certificate generation and sends the certificate to the examinee, or it informs the examinee that the pass criteria weren't met.
+  1. If failed: An estimate of achieved score is provided to the examinee for guidance. As the sole purpose of our service is the examination, the incorrectly answered questions will not be revealed.
+  The practitioner can then retry the exam after a cool-down period (typically one week), but not immediately afterwards to prevent success via brute force methods. Therefore, the information about the exam attempt is stored in a database temporarily. Every day, the server will automatically purge information about attempts that exceeded the cool-down period. Note that the Forum's main concern is to provide the mechanism of certifying whether a learner posses specific knowledge or not and not pointing out gaps in understanding and support learning explicitly.
+  1. If passed: The certificates are generated and send via email. All personal information about the examinee are deleted from the server.
+
+  In either case, the affiliation and raw responses are preserved on the server.
+  The affiliation is used for promotional purposes, while the raw responses will be analysed to optimise the questions.
+  For example, if we identify that most users make the same mistake it may be an indication that either that question or its answer is too ambiguous and should be improved.
+
+  </div>
+  </div>
+  </div>
+
+
+  <div class="card">
+  <div class="card-header">
+  <h3 id="exam-certificates_"><a class="card-link" data-toggle="collapse" href="#exam-certificates">Certificates</a></h3></div>
+  <div id="exam-certificates" class="collapse" data-parent="#exam-accordion">
+  <div class="card-body">
+
+The examinees that pass the examination are awarded a corresponding certificate.
+Such certificate consists of two parts: a PDF and a text file.
+The PDF contains the key information making the certificate meaningful.
+An example is given in the image.
+
+<img src="/assets/img/jane-doe.jpg" title="Example certificate for Jane Doe" style="width:100%"/>
+
+The name and identifier of the certificate is found in the centre, on our example these are "HPC Driving License" and ID 1, respectively.
+Similar to a driving license, this particular certificate could provide the minimum set of knowledge required to understand and use a typical supercomputer.
+
+The text file contains the same information, as well as a verification URL that can be given to a third-party to confirm the certificate's credibility.
+Technically is is PGP signed using the private key of the HPC Certification Forum to allow verification with the public key.
+An example file looks as follows:
+
+      -----BEGIN PGP SIGNED MESSAGE-----
+      Hash: SHA512
+      HPC Certification Forum Certificate
+      This text confirms that "Jane Doe" has
+      successfully obtained the certificate
+      "HPC driving license" (id: 1) on 02/2019.
+      Verification URL: https://hpc-certification.org/[...]
+      -----BEGIN PGP SIGNATURE-----
+      [...]
+      -----END PGP SIGNATURE-----
+
+
+  </div>
+  </div>
+  </div>
+
+  </div>    
   </div>
 </div>
 </div>
