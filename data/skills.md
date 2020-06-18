@@ -66,5 +66,10 @@ More details can be found in the actual competence standard.
 
 The HPC competence standard is available in various forms:
 
-  * A wiki for the skills (editable for members) is [available here](https://www.hpc-certification.org/wiki/).
+  * The markdown sources are available in [GitHub](https://github.com/HPC-certification-forum/skill-tree)
+  * A wiki for the skills (editable for members) is [available here](https://www.hpc-certification.org/wiki/) -- it is synchronized with the GitHub sources.
+  * A mindmap version for freeplane is available in [GitHub](https://github.com/HPC-certification-forum/skill-tree/blob/master/skill-tree.mm) -- it is synchronized with the GitHub sources.
   * An interactive map of the skill tree is [available here](/skills/map).
+  * A [RESTful service](/ecosystem/#rest) allows convenient remote access to the information of the competence and supplementary information.
+
+Information about contributing to the competence standard is available in [processes](/processes/#skills).
