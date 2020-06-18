@@ -70,7 +70,7 @@ Note that not all processes are completely implemented, yet.
   A released skill tree together with all skill specifications has the version number: MAJOR.MINOR.
   The latest version of the skill tree is available with the tag “latest”.
 
-  The version number is increased depending on the most distruptive type of change made:
+  The version number is increased depending on the most disruptive [type of change made](/processes/#cs-evolving):
   * No version change is necessary if only changes of type S0 are made.
   * Minor version number:
     - S1
@@ -95,12 +95,12 @@ Note that not all processes are completely implemented, yet.
   * There exists a current “working/development” version, which is the main branch in GitHub that is also editable using in the Wiki.
   * Each released version is tagged with the respective version tag.
 
-  We aim to not have more than one skill tree release per year: either announced at the Supercomputing conference or the ISC HPC conference.
+  We aim to not have more than one major release of the competence standard per year: either announced at the Supercomputing conference or the ISC HPC conference.
   * Rationale: At these conferences we typically organize BoFs and we can announce the changes during the conferences.
 
 #### Integration of changes
 
-  Decision making about changes to make and acceptance are as follows:
+  Change requests are handled depending on the [severity of the change](/processes/#cs-versions):
   * S0: any HPCCF member can perform these changes and they are automatically accepted
   * S1, S2, T0, T2: the respective topic curator
   * T1: topic curator as long as the skill remains inside the topic
@@ -116,7 +116,7 @@ Note that not all processes are completely implemented, yet.
 #### Conditions to make a release
 
   * For each leaf-level skill, at least a pool covering 50% of the required exam questions shall be available.
-  * The skill tree was frozen at least one month ago and no additional concern was raised within one week.
+  * The skill tree was frozen at least one month ago and no additional concern was raised by any member within one week.
 
 #### Release process
 
