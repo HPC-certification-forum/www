@@ -69,7 +69,7 @@
 
           if($file == "b" || $file == "leftover") continue; // skip root
 
-          $skill = load_skill($dir . $file);
+          $skill = load_skill($dir, $file);
           if($format == "js-structure"){
             // find the skill in the hierarchy
             $target = explode("/", $file);
@@ -133,14 +133,14 @@
     return $res;
   }
 
-  function load_skill($id){
-    $file = $id . ".txt";
+  function load_skill($dir, $id){
+    $file = $dir . $id . ".txt";
 
     if(! file_exists($file)){
       return array("error" => "skill doesn't exist");
     }
     $data = file_get_contents($file);
-    $out = array("title" => "");
+    $out = array("title" => "", "id" => $id);
     foreach(preg_split("/# */", $data) as $section){
       $txt = explode("\n", $section);
       $first = trim(array_shift($txt));
@@ -196,7 +196,7 @@
     generate_subtree_skills($skill_root, $skill, $format);
   }
 
-  $data = load_skill($skill_root . $skill);
+  $data = load_skill($skill_root, $skill);
   if(array_key_exists("all", $q_fields) || array_key_exists("training", $q_fields)){
     $train = load_teaching($training_root . $skill);
     if($train){
