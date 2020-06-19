@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Skills
-permalink: /skills/
-category: "skills"
+title: Competences
+permalink: /cs/
+category: "cs"
 order: 1
 backgroundID: books
 ---
@@ -10,9 +10,29 @@ backgroundID: books
 A key goal of HPCC is the fine-grained standardization of the HPC knowledge representation leading into a HPC competence standard.
 This is achieved by mapping competences into skills, organize them into a tree, and make them navigatable using tools.
 
-## Definition
 
-### Skill
+## Competence Standard
+
+The HPC **competence standard (CS)** is represented by the definitions of a set of skills together with their organization in the skill tree.
+We refer to a specific standard using a phrase like **CS-1.0** (version 1.0) or **CS-latest** for the latest released version.
+There exists a current development version which allows for changes and previous (released) versions.
+Details about the release process are found [here](/processes/#skills).
+
+
+### Availability
+
+The HPC competence standard is available in various forms:
+
+  * The markdown sources are available in [GitHub](https://github.com/HPC-certification-forum/skill-tree)
+  * A wiki for the skills (editable for members) is [available here](https://www.hpc-certification.org/wiki/) -- it is synchronized with the GitHub sources.
+  * A mindmap version for freeplane is available in [GitHub](https://github.com/HPC-certification-forum/skill-tree/blob/master/skill-tree.mm) -- it is synchronized with the GitHub sources.
+  * An interactive map of the skill tree is [available here](/cs/map).
+  * A [RESTful service](/ecosystem/#rest) allows convenient remote access to the information of the competence and supplementary information.
+
+Information about contributing to the competence standard is available in [processes](/processes/#skills).
+
+
+## Skill
 
 A HPC-relevant competence of theoretical and/or practical nature.
 
@@ -30,9 +50,10 @@ Typically, an institution has only few experts, if any at all.
 
 The definition of aims and outcomes follows literature for higher education, see [learning outcomes](https://www.heacademy.ac.uk/system/files/assessment-learning-outcomes.pdf).
 
-### Skill tree
+## Skill tree
 
-The hierarchical organization of the competences in a tree. The tree can contain references to a skill in another section.
+The hierarchical organization of the competences in a tree.
+The tree can contain references to a skill in another section.
 
 We are currently working on the classification of the HPC competences and have initially identified major topics for the HPC Certification Program as “HPC Knowledge”, “Use of the HPC Environment”, “Performance Engineering”, and “Software Engineering”.
 We are in the process to extend these topics with two sub-trees about “Administration” and “Big Data Analytics”.
@@ -42,7 +63,6 @@ The **top levels** of the current skill tree are shown here:
 ![Skill tree](/assets/img/skill-tree.jpg "Skill tree"){:style="width:100%;"}
 
 The tree has the following properties:
-  * The skill tree is version controlled representing one HPC **competence standard (CS)**. We refer to a standard using a phrase like **CS-1.0** (version 1.0). There exists a current development version which allows for changes and previous (released) versions. Details about the release process are found [here](/processes/#skills).
   * Skills on leaf-level are generally organized such that they encapsulate a single narrow topic, knowledge or technology. **High-level overview skills** are possible as well but then focus on the overview instead of introducing too many details for specific solutions.
   * On the leaf level, a skill is fine-grained and orthogonal to other skills -- their narrowed scope means they can be taught in sessions ranging from a 1-hour lecture up to a 4-hour workshop. We believe this granularity allows practitioners to cherry-pick the skills relevant to their circumstances, and lecturers and examiners to prepare small lectures with well-defined content.
   * For technology-dependent skills on the leaf level (e.g., a specific file system or workload manager) the introductory skills are often provided, as they contribute to the foundation of many specialized skills representing a specific hardware or software technology.
@@ -66,15 +86,3 @@ The following is a virtual example that illustrates how an inner node may look l
      - Describe a schedulers backfilling strategy to utilize resources
 
 More details can be found in the actual competence standard.
-
-## Competence standard
-
-The HPC competence standard is available in various forms:
-
-  * The markdown sources are available in [GitHub](https://github.com/HPC-certification-forum/skill-tree)
-  * A wiki for the skills (editable for members) is [available here](https://www.hpc-certification.org/wiki/) -- it is synchronized with the GitHub sources.
-  * A mindmap version for freeplane is available in [GitHub](https://github.com/HPC-certification-forum/skill-tree/blob/master/skill-tree.mm) -- it is synchronized with the GitHub sources.
-  * An interactive map of the skill tree is [available here](/skills/map).
-  * A [RESTful service](/ecosystem/#rest) allows convenient remote access to the information of the competence and supplementary information.
-
-Information about contributing to the competence standard is available in [processes](/processes/#skills).

@@ -22,7 +22,7 @@ backgroundID: rack
 
 ## Development
 
-Our development branch is available on [GitHub](https://github.com/HPC-certification-forum).
+Our repositories are available on [GitHub](https://github.com/HPC-certification-forum).
 
 ## Publications
 

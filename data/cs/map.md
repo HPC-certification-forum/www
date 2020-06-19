@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Skill Map
-permalink: /skills/map/
+permalink: /cs/map/
 category: "skills"
 order: 1
 backgroundID: books
