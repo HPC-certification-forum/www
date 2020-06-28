@@ -470,13 +470,56 @@ If more than 6 month are remaining, an election for this position is announced.
 <div class="card">
 <div class="card-header"><h2 id="publicity_"><a class="card-link" data-toggle="collapse" href="#publicity">Publicity</a></h2></div>
 <div id="publicity" class="collapse" data-parent="#accordion">
-  <div class="card-body">
-  </div>
+<div class="card-body">
+
+<div id="pub-accordion">
+
+<div class="card">
+<div class="card-header"><h3 id="pub-com_"><a class="card-link" data-toggle="collapse" href="#pub-com">Communication</a></h3></div>
+<div id="pub-com" class="collapse" data-parent="#pub-accordion">
+<div class="card-body">
+
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="card-header"><h3 id="pub-ml_"><a class="card-link" data-toggle="collapse" href="#pub-ml">Mailing List</a></h3></div>
+<div id="pub-ml" class="collapse" data-parent="#pub-accordion">
+<div class="card-body">
+
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h3 id="pub-slack_"><a class="card-link" data-toggle="collapse" href="#pub-slack">Slack</a></h3></div>
+<div id="pub-slack" class="collapse" data-parent="#pub-accordion">
+<div class="card-body">
+
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="card-header"><h3 id="pub-www_"><a class="card-link" data-toggle="collapse" href="#pub-www">Webpage</a></h3></div>
+<div id="pub-www" class="collapse" data-parent="#pub-accordion">
+<div class="card-body">
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
 </div>
 </div>
 
 </div>
-
+</div>
 
 
 <script>
