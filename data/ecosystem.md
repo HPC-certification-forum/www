@@ -12,11 +12,11 @@ On this page, we describe current and prospective tools that support practitione
 Standalone tools are available in [GitHub](https://github.com/HPC-certification-forum/tools).
 
 
-# Accessing the competence standard
+# Accessing the Competence Standard
 
 There are various means to access [the standard](/cs/#availability).
 
-## RESTful services
+## RESTful Services
 The REST API provides read-only access to the
   * Description of the skill as JSON (from the GitHub Markdown)
   * Teaching material available (imported from an extra GitHub repository)

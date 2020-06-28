@@ -32,5 +32,5 @@ Details are found on the [processes page](/processes/#meetings).
 
 We happily include the logo of your institution/company on the webpage, simply send an email to the board.
 
-## Contact us
+## Contact Us
 Feel free to reach out to us via the email address of the executive board: <a href="mailto:hpccf-board@hpc-certification.org">hpccf-board@hpc-certification.org</a>.
