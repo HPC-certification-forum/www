@@ -24,7 +24,7 @@ Note that not all processes are completely implemented, yet.
 
   <div class="card">
   <div class="card-header">
-  <h3 id="cs-evolving_"><a class="card-link" data-toggle="collapse" href="#cs-evolving">Evolving the standard</a></h3></div>
+  <h3 id="cs-evolving_"><a class="card-link" data-toggle="collapse" href="#cs-evolving">Evolving the Standard</a></h3></div>
   <div id="cs-evolving" class="collapse" data-parent="#cs-accordion">
   <div class="card-body">
 
@@ -39,7 +39,8 @@ Note that not all processes are completely implemented, yet.
 
 #### Classification of changes
 
-  Changes to the competence standard are classified to indicate the intrusiveness of the change, a lower category is less intrusive than a higher category. This impacts the decision making process and versioning.
+  Changes to the competence standard are classified to indicate the intrusiveness of the change, a lower category is less intrusive than a higher category.
+  This impacts the decision making process and versioning.
 
   The classifications of the modifications are:
 
@@ -54,6 +55,9 @@ Note that not all processes are completely implemented, yet.
     - T2 splitting a skill that was specified too generic into subskills
     - T3 moving content of one skill to one or multiple other skills
     - T4 deleting a skill
+
+  Note that all skill specifications together with the tree that defines their organization defines a HPC Competence Standard.
+  This classification scheme shall be used by contributors in understanding the release and [versioning process](#cs-versions).
 
   </div>
   </div>
@@ -87,7 +91,7 @@ Note that not all processes are completely implemented, yet.
 
   <div class="card">
   <div class="card-header">
-  <h3 id="cs-releases_"><a class="card-link" data-toggle="collapse" href="#cs-releases">Release management</a></h3></div>
+  <h3 id="cs-releases_"><a class="card-link" data-toggle="collapse" href="#cs-releases">Release Management</a></h3></div>
   <div id="cs-releases" class="collapse" data-parent="#cs-accordion">
   <div class="card-body">
 
@@ -120,7 +124,8 @@ Note that not all processes are completely implemented, yet.
 
 #### Release process
 
- The steering board owns the release management lifecycle for the competence standard which includes scheduling, coordinating and managing the releases.
+ The steering board represents the role of release manager, and, thus, owns the release management lifecycle for the competence standard which includes scheduling, coordinating and managing any release.
+ The responsibility of the release manager is distributed among the roles of the steering board.
 
  In particular:
   1. The subtree topic chairs reports the readiness of the respective trees to the tree curator who reports the status of the next release during a board meeting.
@@ -150,7 +155,7 @@ Note that not all processes are completely implemented, yet.
 
   Contributions to the skill definitions can be made by
   1. editing the skill definitions on the Wiki (particularly for S0, S1 and T1 changes)
-  1. discussing them on Slack (it is a good idea to announce complex changes to the community)
+  1. discussing them on Slack (it is a good idea to announce complex changes to the community in the #skill-tree channel)
   1. adjusting the cs-tree in the MindMap (editable via the FreePlane tool)
   1. directly preparing a GitHub pull request that changes the Markdown files in the community repository. As GitHub allows for commenting on individual lines, this provides means for rapid feedback as well.
 
@@ -168,7 +173,7 @@ Note that not all processes are completely implemented, yet.
 
   <div class="card">
   <div class="card-header">
-  <h3 id="cs-guidelines_"><a class="card-link" data-toggle="collapse" href="#cs-guidelines">Guidelines for contributions</a></h3></div>
+  <h3 id="cs-guidelines_"><a class="card-link" data-toggle="collapse" href="#cs-guidelines">Guidelines for Contributions</a></h3></div>
   <div id="cs-guidelines" class="collapse" data-parent="#cs-accordion">
   <div class="card-body">
 
@@ -201,7 +206,7 @@ Note that not all processes are completely implemented, yet.
 
   <div class="card">
   <div class="card-header">
-  <h3 id="cs-license_"><a class="card-link" data-toggle="collapse" href="#cs-license">License terms</a></h3></div>
+  <h3 id="cs-license_"><a class="card-link" data-toggle="collapse" href="#cs-license">License Terms</a></h3></div>
   <div id="cs-license" class="collapse" data-parent="#cs-accordion">
   <div class="card-body">
   The HPCCF competence standard and provided tools are licensed under the CC BY 4.0 [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/) if not stated explicitly otherwise in the tools.
@@ -227,7 +232,7 @@ Note that not all processes are completely implemented, yet.
 
 
 <div class="card">
-<div class="card-header"><h2 id="training_"><a class="card-link" data-toggle="collapse" href="#training">Training material</a></h2></div>
+<div class="card-header"><h2 id="training_"><a class="card-link" data-toggle="collapse" href="#training">Training Material</a></h2></div>
 <div id="training" class="collapse" data-parent="#accordion">
   <div class="card-body">
   <div id="train-accordion">
@@ -246,12 +251,12 @@ With our tools, we provide various views of the skills with links to suitable tr
 The seal of endorsement indicates that a specific training material covers certain skills from the competence standard.
 <img src="/assets/img/endorsed-training.jpg" title="Example seal for endorsed training" style="width:30%; float:right"/>
 
-The reference to the HPCCF and the seal can be used free of charge under the condition that the developer of the training material registers a link to the material (or course/event) on our webpage using our online form.
+The reference to the HPCCF and the seal can be used free of charge under the condition that the developer of the training material registers a link to the material (or course/event) on our webpage using our [online form](TODO).
+To help you to create the appropriate formulation, you can select skills in the interactive skill tree and then navigate to the [selection tool](https://www.hpc-certification.org/wiki/selection/).
   * Rationale: the HPCCF maintains information about the usage of the seal.
 
 Note that we are not verifing the correct usage of the seal explicitly.
-However, in case the training material or course doesn't deliver the expected material practitioners may complain and we will remove the link to that training material from our webpage.
-
+However, in case the training material or course doesn’t deliver the expected material <span class="hint tpract">practitioners</span> may complain and we may be forced to remove the link to that training material from our webpage.
 
   </div>  
   </div>
@@ -264,7 +269,7 @@ However, in case the training material or course doesn't deliver the expected ma
   <div class="card-body">
   <div id="exam-accordion">
 
-Practitioner can perform examinations to obtain certificates.
+A <span class="hint tpract">practitioner</span> can perform examinations to obtain certificates.
 
   <div class="card">
   <div class="card-header">
@@ -272,11 +277,11 @@ Practitioner can perform examinations to obtain certificates.
   <div id="exam" class="collapse" data-parent="#exam-accordion">
   <div class="card-body">
 
-In order to obtain a certificate, a practitioner must perform an exam.
+In order to obtain a certificate, the <span class="hint tpract">practitioner</span> must perform an exam.
 The examination process can be started at any time.
 
 To clarify the behavior and privacy the process is documented as follows:
-  1. The practitioner has to register on our exam page (TODO) using their name, email address and optionally an affiliation. On the page, the process is explained, together with policies for privacy and integrity.
+  1. The <span class="hint tpract">practitioner</span>  has to register on our exam page (TODO) using their name, email address and optionally an affiliation. On the page, the process is explained, together with policies for privacy and integrity.
   1. An encrypted token is created on the server that is send to the practitioner by email.
   Up to this stage, we do not store any information about the examinee on the server.
   1. The email contains a link that will start the examination. The examinee can choose to start the examination by clicking on it any time (within one week).
@@ -284,13 +289,15 @@ To clarify the behavior and privacy the process is documented as follows:
   1. The practitioner completes the summative assessment which has a time limit. The assessment will consist of questions drawn from a pool for each of the skills examined.
   1. Once the examinee submits the completed exam, the selection of answers is transmitted to the server and stored until it is automatically assessed.
   1. The server performs the validation of the submitted answers at scheduled times. It either initiates certificate generation and sends the certificate to the examinee, or it informs the examinee that the pass criteria weren't met.
-  1. If failed: An estimate of achieved score is provided to the examinee for guidance. As the sole purpose of our service is the examination, the incorrectly answered questions will not be revealed.
-  The practitioner can then retry the exam after a cool-down period (typically one week), but not immediately afterwards to prevent success via brute force methods. Therefore, the information about the exam attempt is stored in a database temporarily. Every day, the server will automatically purge information about attempts that exceeded the cool-down period. Note that the Forum's main concern is to provide the mechanism of certifying whether a learner posses specific knowledge or not and not pointing out gaps in understanding and support learning explicitly.
+  1. If the exam wasn't passed, an estimate of achieved score is provided to the examinee for guidance. As the sole purpose of our service is the examination, the incorrectly answered questions will not be revealed.
+  The practitioner may retry the exam after a cool-down period (typically one week), but not immediately afterwards to prevent success via brute force methods. Therefore, information about the exam attempt is stored in a database temporarily.
+  Every day, the server will automatically purge information about attempts that exceeded the cool-down period. Note that the Forum's main concern is to provide the mechanism of certifying whether a learner posses specific knowledge or not and not pointing out gaps in understanding and support learning explicitly.
   1. If passed: The certificates are generated and send via email. All personal information about the examinee are deleted from the server.
 
   In either case, the affiliation and raw responses are preserved on the server.
   The affiliation is used for promotional purposes, while the raw responses will be analysed to optimise the questions.
   For example, if we identify that most users make the same mistake it may be an indication that either that question or its answer is too ambiguous and should be improved.
+  Also, lecturers will profit from the feedback if particular questions reveal poor performance of practitioners of a particular HPC site.
 
   </div>
   </div>
@@ -351,7 +358,7 @@ An example file looks as follows:
 
   <div class="card">
   <div class="card-header">
-  <h3 id="gov-conduct_"><a class="card-link" data-toggle="collapse" href="#gov-conduct">Code of conduct</a></h3></div>
+  <h3 id="gov-conduct_"><a class="card-link" data-toggle="collapse" href="#gov-conduct">Code of Conduct</a></h3></div>
   <div id="gov-conduct" class="collapse" data-parent="#gov-accordion">
   <div class="card-body">
   We follow the [contributor covenant code of conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).
@@ -379,8 +386,7 @@ There are three types of meetings:
 
 #### General assembly
 
-The general assembly brings together all members of the forum to discuss the status and next steps. During ISC HPC and Supercomputing. The vote for the steering board takes place during ISC HPC.
-It also serves as transition from one steering board to another.
+The general assembly brings together all members of the forum to discuss the status and next steps. During ISC HPC and Supercomputing. Typically, we aim to introduce the new steering board during ISC HPC where the general assembly is a hand over between the previous steering board to the next.
 
 #### Open meeting procedure
 
