@@ -122,33 +122,40 @@ footer a{
   color: white;
 }
 
-body{
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  z-index: -1;
   background: url(/assets/img/accomplishment-ceremony-college-267885.jpg);
   background-size: 100vw;
 }
 
-body#processes{
+body#processes::before{
   background: url(/assets/img/colorful-toothed-wheels-171198.jpg);
   background-size: 100vw;
 }
 
-
-body#roadmap{
+body#roadmap::before{
   background: url(/assets/img/adventure-asphalt-california-country-533671.jpg);
   background-size: 100vw;
 }
 
-body#rack{
+body#rack::before{
   background: url(/assets/img/airport-business-cabinets-236093.jpg);
   background-size: 100vw;
 }
 
-body#books{
+body#books::before{
   background: url(/assets/img/blur-book-stack-books-590493.jpg);
   background-size: 100vw;
 }
 
-body#participate{
+body#participate::before{
   background: url(/assets/img/ground-group-growth-461049.jpg);
   background-size: 100vw;
 }
