@@ -16,7 +16,7 @@ C = {
     bannerTitle: "Cookies:",
 
     // Message banner message
-    bannerMessage: "This site uses cookies to deliver its services.",
+    bannerMessage: "Some subpages of this site use cookies to memorize your selections across pages and your login information (if any). This information is used only to provide this service and not submitted to/recorded on the server for any marketing/advertisement purpose.",
 
     // Message banner dismiss button
     bannerButton: "OK",
