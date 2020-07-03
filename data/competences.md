@@ -7,8 +7,8 @@ order: 1
 backgroundID: books
 ---
 
-A key goal of HPCC is the fine-grained standardization of the HPC knowledge representation leading into a HPC competence standard.
-This is achieved by mapping competences into skills, organize them into a tree, and make them navigatable using tools.
+A key goal of HPCC is the fine-grained standardization of the HPC knowledge representation leading to a HPC competence standard.
+This is achieved by mapping competencies into skills, organize them into a tree, and make them navigatable using tools.
 
 
 ## Competence Standard
