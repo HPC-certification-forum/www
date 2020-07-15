@@ -115,7 +115,7 @@ The steering board for the period 2020/2021 is:
   * Topic curators:
     * HPC Knowledge: **Lev Lafayette** (University of Melbourne)
     * Performance Engineering: **Anja Gerbes** (University of Frankfurt)    
-    * Sofware Development: **Roberto Villegas-Diaz** (University of Reading)
+    * Sofware Development: **Roberto Villegas-Diaz** (South Dakota State University)
     * Administration: **Sudeep Narayan Banerjee** (Indian Institute of Technology Gandhinagar)
     * Use of the HPC Environment: **jointly managed by the board**
     * Big Data: **jointly managed by the board**
