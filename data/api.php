@@ -144,23 +144,25 @@
     return json_decode($data);
   }
 
-  function getFileCount($path) {
+  function getExamQuestionCount($path) {
     $size = 0;
     $ignore = array('.', '..');
     $files = scandir($path);
     foreach($files as $t) {
         if(in_array($t, $ignore)) continue;
-        if (is_dir(rtrim($path, '/') . '/' . $t)) {
-            $size += getFileCount(rtrim($path, '/') . '/' . $t);
+        $file = rtrim($path, '/') . '/' . $t;
+        if (is_dir($file)) {
+            $size += getExamQuestionCount(rtrim($path, '/') . '/' . $t);
         } else {
-            $size++;
+            $data = file_get_contents($file);
+            $size += substr_count($data, "#select");
         }
     }
     return $size;
   }
 
   function load_exam($dir, $id){
-    return array( "questions" => getFileCount($dir . $id));
+    return array( "questions" => getExamQuestionCount($dir . $id));
   }
 
   function load_skill($dir, $id){
