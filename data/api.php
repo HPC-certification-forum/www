@@ -5,6 +5,7 @@
   # Root to skills
   $skill_root = "/home/www/hpccertification/skill-tree-wiki/skill-tree/";
   $training_root = "/home/www/hpccertification/skill-data-training/";
+  $exam_root = "/home/www/hpccertification/skills/";
 
   $debug = array_key_exists("debug", $_GET);
   $skill = $_GET["request"];
@@ -69,7 +70,7 @@
 
           if($file == "b" || $file == "leftover") continue; // skip root
 
-          $skill = load_skill($dir . $file);
+          $skill = load_skill($dir, $file);
           if($format == "js-structure"){
             // find the skill in the hierarchy
             $target = explode("/", $file);
@@ -133,14 +134,45 @@
     return $res;
   }
 
-  function load_skill($id){
-    $file = $id . ".txt";
+  function load_teaching($id){
+    $file = $id . ".json";
 
     if(! file_exists($file)){
-      return array("error" => "skill doesn't exist");
+      return null;
     }
     $data = file_get_contents($file);
-    $out = array("title" => "");
+    return json_decode($data);
+  }
+
+  function getExamQuestionCount($path) {
+    $size = 0;
+    $ignore = array('.', '..');
+    $files = scandir($path);
+    foreach($files as $t) {
+        if(in_array($t, $ignore)) continue;
+        $file = rtrim($path, '/') . '/' . $t;
+        if (is_dir($file)) {
+            $size += getExamQuestionCount(rtrim($path, '/') . '/' . $t);
+        } else {
+            $data = file_get_contents($file);
+            $size += substr_count($data, "#select");
+        }
+    }
+    return $size;
+  }
+
+  function load_exam($dir, $id){
+    return array( "questions" => getExamQuestionCount($dir . $id));
+  }
+
+  function load_skill($dir, $id){
+    $file = $dir . $id . ".txt";
+
+    if(! file_exists($file)){
+      return array("error" => "skill doesn't exist", "id" => $id);
+    }
+    $data = file_get_contents($file);
+    $out = array("title" => "", "id" => $id);
     foreach(preg_split("/# */", $data) as $section){
       $txt = explode("\n", $section);
       $first = trim(array_shift($txt));
@@ -171,21 +203,26 @@
       $out[$first] = $items;
     }
     if(! array_key_exists("outcomes", $out)){
-      return array("error" => "skill is incomplete");
+      return array("error" => "skill is incomplete", "id" => $id);
     }
     // append additional information
 
-    return filter($out);
-  }
-
-  function load_teaching($id){
-    $file = $id . ".json";
-
-    if(! file_exists($file)){
-      return null;
+    $data = filter($out);
+    global $q_fields, $training_root, $exam_root;
+    if(array_key_exists("all", $q_fields) || array_key_exists("training", $q_fields)){
+      $train = load_teaching($training_root . $id);
+      if($train){
+        $data["training"] = $train;
+      }
     }
-    $data = file_get_contents($file);
-    return json_decode($data);
+    if(array_key_exists("all", $q_fields) || array_key_exists("exam", $q_fields)){
+      $train = load_exam($exam_root, $id);
+      if($train){
+        $data["exams"] = $train;
+      }
+    }
+
+    return $data;
   }
 
   if(array_key_exists("list", $_GET)){
@@ -196,13 +233,6 @@
     generate_subtree_skills($skill_root, $skill, $format);
   }
 
-  $data = load_skill($skill_root . $skill);
-  if(array_key_exists("all", $q_fields) || array_key_exists("training", $q_fields)){
-    $train = load_teaching($training_root . $skill);
-    if($train){
-      $data["training"] = $train;
-    }
-  }
-
+  $data = load_skill($skill_root, $skill);
   print(json_encode($data));
 ?>
