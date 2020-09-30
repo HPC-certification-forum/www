@@ -162,6 +162,7 @@ function view_question_submit($id){
     </p>
 
     <h3><label for="question">Question</label></h3>
+    <p><em>You can paste a question and all answers into this box, if you start the question with "^". Use then one line for the question and per answer and * at the beginning of a line to indicate a correct answer.</em><p>
     <p>
     <textarea id="question" name="question" rows="4" cols="100"></textarea>
     </p>
@@ -175,8 +176,8 @@ function view_question_submit($id){
     <p>
     <?php
     for($i=0; $i < 10; $i++){
-      echo('<div class="row"><div class="col-2">Correct </label><input type="checkbox" name="o' . $i . '" value="o' . $i . '"></div>
-      <div class="col-m"><textarea type="text" name="a' . $i . '" value=""  rows="2" cols="60"></textarea><label for="o' . $i . '">
+      echo('<div class="row"><div class="col-2">Correct </label><input type="checkbox" id="o' . $i . '" name="o' . $i . '" value="o' . $i . '"></div>
+      <div class="col-m"><textarea type="text" id="a' . $i . '" name="a' . $i . '" value=""  rows="2" cols="60"></textarea><label for="o' . $i . '">
       </div></div>'); # <label for="a' . $i . '">Answer</label>
     }
     ?>
