@@ -182,4 +182,23 @@ $().ready(function() {
   		}
   	});
   }
+  if($("#question").length){
+    /* allow the injection of questions */
+    $("#question").on("blur", function(event){
+      var text = $("#question").val();
+      if(text[0] == '^'){
+        var a = text.split("\n");
+        $("#question").val(a[0].substr(1));
+        for(var i = 1; i < a.length; i++){
+          var val = a[i][0] == "*";
+          $("#o" + (i-1)).attr("checked", val);
+          var text = a[i];
+          if(val){
+            text = text.substr(1);
+          }
+          $("#a" + (i-1)).val(text);
+        }
+      }
+    });
+  }
 });
