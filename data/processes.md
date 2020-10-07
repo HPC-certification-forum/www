@@ -158,6 +158,7 @@ Note that not all processes are completely implemented, yet.
   1. discussing them on Slack (it is a good idea to announce complex changes to the community in the #skill-tree channel)
   1. adjusting the cs-tree in the MindMap (editable via the FreePlane tool)
   1. directly preparing a GitHub pull request that changes the Markdown files in the community repository. As GitHub allows for commenting on individual lines, this provides means for rapid feedback as well.
+  1. adopting a skill. We encourage [experts to maintain skills](#cs-adopting) in their expertise which ensures the skill is meeting the needs of the community.
 
 #### Integration
 
@@ -166,6 +167,30 @@ Note that not all processes are completely implemented, yet.
   Ultimately, the curators of the respective skill sub-trees will be in charge of assessing the suggestions and modifications and reacting to change requests.
   At the moment, the process is lightweight, direct change requests are often directly accepted for the phase of building the first release version of the tree.
 
+  </div>
+  </div>
+  </div>
+
+
+
+  <div class="card">
+  <div class="card-header">
+  <h3 id="cs-adopting_"><a class="card-link" data-toggle="collapse" href="#cs-adopting">Experts Adopting Skills</a></h3></div>
+  <div id="cs-adopting" class="collapse" data-parent="#cs-accordion">
+  <div class="card-body">
+We enable experts to curate selected skills that are in their field of expertise.
+As they are proficient in the particular software or hardware, they can assess which knowledge is most relevant to beginners, intermediates or experts.
+Analogous to a “maintainer” of a code subsystem, these individuals are curating the adopted skills.
+We say that a skill is “adopted” if it is curated by an expert and the expert becomes the curator of a skill. The curator of a skill will be listed on the skill.
+
+#### Responsibilities of a curator
+
+The curator should watch for any suggestions to modify the skill and moderate these changes accordingly.
+The curator should participate in discussions involving the specific skill.
+Procedure to adopt a skill
+Initially, the expert should review the skill carefully and make suggestions for any change.
+The expert should also contribute some examination questions to the portfolio.
+The responsible subtree curator should be contacted by email or Slack (skill-tree channel) and the interest to adopt the skill must be expressed together with a brief reference about expertise in the field. The board will then accept or deny the request.
   </div>
   </div>
   </div>
