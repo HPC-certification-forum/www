@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Competences
+title: Competencies
 permalink: /cs/
 category: "cs"
 order: 1
@@ -52,10 +52,10 @@ The definition of aims and outcomes follows literature for higher education, see
 
 ## Skill Tree
 
-The hierarchical organization of the competences in a tree.
+The hierarchical organization of the competencies in a tree.
 The tree can contain references to a skill in another section.
 
-We are currently working on the classification of the HPC competences and have initially identified major topics for the HPC Certification Program as “HPC Knowledge”, “Use of the HPC Environment”, “Performance Engineering”, and “Software Engineering”.
+We are currently working on the classification of the HPC competencies and have initially identified major topics for the HPC Certification Program as “HPC Knowledge”, “Use of the HPC Environment”, “Performance Engineering”, and “Software Engineering”.
 We are in the process to extend these topics with two sub-trees about “Administration” and “Big Data Analytics”.
 
 The **top levels** of the current skill tree are shown here:
