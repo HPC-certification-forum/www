@@ -4,7 +4,8 @@
    */
   # Root to skills
   $skill_root = "/home/www/hpccertification/skill-tree-wiki/skill-tree/";
-  $training_root = "/home/www/hpccertification/skill-data-training/";
+  $material_root = "/home/www/hpccertification/skill-data-material/";
+  $event_root = "/home/www/hpccertification/skill-data-events/";
   $exam_root = "/home/www/hpccertification/skills/";
 
   $debug = array_key_exists("debug", $_GET);
@@ -208,11 +209,17 @@
     // append additional information
 
     $data = filter($out);
-    global $q_fields, $training_root, $exam_root;
-    if(array_key_exists("all", $q_fields) || array_key_exists("training", $q_fields)){
-      $train = load_teaching($training_root . $id);
+    global $q_fields, $material_root, $event_root, $exam_root;
+    if(array_key_exists("all", $q_fields) || array_key_exists("material", $q_fields)){
+      $train = load_teaching($material_root . $id);
       if($train){
-        $data["training"] = $train;
+        $data["material"] = $train;
+      }
+    }
+    if(array_key_exists("all", $q_fields) || array_key_exists("events", $q_fields)){
+      $train = load_teaching($event_root . $id);
+      if($train){
+        $data["events"] = $train;
       }
     }
     if(array_key_exists("all", $q_fields) || array_key_exists("exam", $q_fields)){

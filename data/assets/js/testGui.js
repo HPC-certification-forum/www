@@ -188,15 +188,19 @@ $().ready(function() {
       var text = $("#question").val();
       if(text[0] == '^'){
         var a = text.split("\n");
-        $("#question").val(a[0].substr(1));
+        $("#question").val(a[0].substr(1).trim());
         for(var i = 1; i < a.length; i++){
-          var val = a[i][0] == "*";
-          $("#o" + (i-1)).attr("checked", val);
           var text = a[i];
+          var val = text[0] == "*";
+          $("#o" + (i-1)).prop("checked", val);
           if(val){
             text = text.substr(1);
           }
-          $("#a" + (i-1)).val(text);
+          $("#a" + (i-1)).val(text.trim());
+        }
+        for(var i = a.length; i < 10; i++){
+          $("#a" + (i-1)).val("");
+          $("#o" + (i-1)).prop("checked", false);
         }
       }
     });
