@@ -94,7 +94,7 @@ function validate_question_submission($id){
         if($_POST["email"] != ""){
           $email = " <" . $_POST["email"] . ">";
         }
-        $data = "#contributor: " . $_POST["name"] . $email . "\n";
+        $data = "#contributor " . $_POST["name"] . $email . "\n";
       }
       $data = $data . $_POST["question"] . "\n\n#select multiple\n\n";
       for($i=0; $i < 10; $i++){
