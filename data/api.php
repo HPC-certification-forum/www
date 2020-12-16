@@ -6,7 +6,7 @@
   $skill_root = "/home/www/hpccertification/skill-tree-wiki/skill-tree/";
   $material_root = "/home/www/hpccertification/skill-data-material/";
   $event_root = "/home/www/hpccertification/skill-data-events/";
-  $exam_root = "/home/www/hpccertification/skills/";
+  $exam_root = "/home/www/hpccertification/examination-questions-staging/";
 
   $debug = array_key_exists("debug", $_GET);
   $skill = $_GET["request"];
@@ -28,7 +28,7 @@
     var_dump($_GET);
   }
 
-  header('Content-type: application/json');
+  header('Content-type: application/json; charset=utf-8');
   header("Access-Control-Allow-Origin: *");
 
   function endsWith($haystack, $needle){
@@ -91,6 +91,7 @@
               }
             }
           }else if($format == "json"){
+            //array_push($data, $skill);
             $data[$file] = $skill;
           }else if($format == "js-skills"){
             if(array_key_exists("title", $skill)){
@@ -186,7 +187,15 @@
       }
       $items = array();
       foreach($txt as $line){
-        $line = trim($line);
+        if(preg_match("/  ( )*[*](.*)/", $line, $match)){
+          if($match[1] == ""){
+            $line = trim($match[2]);
+          }else{
+            $line = "* " . trim($match[2]);
+          }
+        }else{
+          $line = trim($line);
+        }
         if($line == "") continue;
         array_push($items, $line);
       }

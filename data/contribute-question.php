@@ -21,7 +21,21 @@ function load_skill($id){
     if(count($out) == 0){
       $out["title"] = $first;
     }else{
-      $out[strtolower($first)] = $txt;
+      $items = array();
+      foreach($txt as $line){
+        if(preg_match("/  ( )*[*](.*)/", $line, $match)){
+          if($match[1] == ""){
+            $line = trim($match[2]);
+          }else{
+            $line = "* " . trim($match[2]);
+          }
+        }else{
+          $line = trim($line);
+        }
+        if($line == "") continue;
+        array_push($items, $line);
+      }
+      $out[strtolower($first)] = $items;
     }
   }
   if(! array_key_exists("outcomes", $out)){
@@ -32,8 +46,19 @@ function load_skill($id){
 }
 
 function clean_str($string) {
-   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
-   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+   $string = str_replace(' ', '_', $string); // Replaces all spaces with hyphens.
+   $string = preg_replace('/\*/', 'star', $string);
+   $result = trim(preg_replace('/[^A-Za-z0-9]/', '_', $string), "_"); // Replace special chars.
+   if($result == ""){
+     $result = trim(preg_replace('/[^A-Za-z0-9,_-]/', '_', $result), "_");
+   }
+   return strtolower($result);
+}
+
+function create_file_name($id, $name){
+  $path = "/home/www/hpccertification/examination-questions-staging/" . $id;
+  mkdir($path, 0755, true);
+  return $path . "/" . clean_str($name);
 }
 
 function validate_question_submission($id){
@@ -61,12 +86,15 @@ function validate_question_submission($id){
         print("<h1 style='color:red'>You must select a valid learning objective</h1><p>Please return with your browser to the previous page and fix the error.</p>");
         exit(0);
       }
-      $path = "/home/www/hpccertification/skills/" . $id;
-      mkdir($path, 0755, true);
+      $path = create_file_name($id, $name);
 
       $data = "";
-      if($_POST["contact"] != ""){
-        $data = "#contributor: " . $_POST["contact"] . "\n";
+      if($_POST["name"] != ""){
+        $email = "";
+        if($_POST["email"] != ""){
+          $email = " <" . $_POST["email"] . ">";
+        }
+        $data = "#contributor: " . $_POST["name"] . $email . "\n";
       }
       $data = $data . $_POST["question"] . "\n\n#select multiple\n\n";
       for($i=0; $i < 10; $i++){
@@ -82,7 +110,7 @@ function validate_question_submission($id){
       }
       $data = $data . "\n\n";
 
-      $ret = file_put_contents($path . "/" . $name, $data, LOCK_EX|FILE_APPEND);
+      $ret = file_put_contents($path, $data, LOCK_EX|FILE_APPEND);
       if($ret){
         echo("<h1>Thank you for submitting your question</h1>");
       }else{
@@ -132,8 +160,15 @@ function view_question_submit($id){
     <em>We give credit to all contributors of whom we select questions. If you provide your details here, we will add you to the contributor list. <br/>Leave it blank to submit a question anonymously.</em>
 
     <div>
-    <label for="contact">Your name &lt;Email&gt;</label>
-    <input type="text" id="contact" name="contact" pattern=".* <.*@.*>" size="50">
+    <label for="name">Your name</label></div>
+    <div>
+    <input type="text" id="name" name="name" size="50">
+    </div>
+
+    <div>
+    <label for="email">Email</label>
+    </div><div>
+    <input type="text" id="email" name="email" pattern=".*@.*" size="50">
     </div>
     </p>
 
@@ -153,9 +188,21 @@ function view_question_submit($id){
     <select id="los" name="los">
       <option value="NA">unselected</option>
       <?php
+      $lastParent = "";
       foreach($data["outcomes"] as $outcome){
-        if(trim($outcome) == "") continue;
-        echo('<option value="' . $outcome . '">' . $outcome . '</option>');
+        $outcome = trim($outcome);
+        if($outcome == "") continue;
+        if($outcome[0] == '*'){
+          $val = clean_str($lastParent) . "_" . clean_str(trim(substr($outcome, 2)));
+        }else{
+          $val = clean_str($outcome);
+          $lastParent = $outcome;
+        }
+        $path = create_file_name($id, $val);
+        if(! file_exists($path)){
+          file_put_contents($path, "", LOCK_EX|FILE_APPEND);
+        }
+        echo('<option value="' . $val . '">' . $outcome . '</option>');
       }
       ?>
     </select>
@@ -209,7 +256,7 @@ if($id == NULL || ! preg_match('/^[A-Za-z0-9_\/]*$/', $id)){
 }
 
 // Generate the HTML for the user-specific examination OR grade it
-if(array_key_exists("contact", $_POST)){
+if(array_key_exists("email", $_POST)){
   validate_question_submission($id);
   exit(0);
 }
