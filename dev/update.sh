@@ -25,5 +25,10 @@ git push -q
 popd
 done
 
+
+pushd /home/www/hpccertification/examination-tools/scripts
+./cron-marker.py
+popd
+
 ) > /dev/null
 
