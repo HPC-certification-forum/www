@@ -27,7 +27,7 @@ A substantial progress has been made towards all of these goals. While the defin
 
 Although, the templates for the skills descriptions were finalised, the effort to map out all of the relevant competencies is still on-going.  The feedback received during a variety of events resulted in the addition of new topics to the first version of the Skill Tree.
 The definitions of the competencies are version-controlled with Git and are publicly available in XML and Markdown format.
-A [Wiki](https://www.hpc-certification.org/wiki) is being used to edit the skills' descriptions, and a navigable and widely customisable [JavaScript](https://www.hpc-certification.org/skills/map/) makes the skill tree easily accessible to the forum members and  end-users alike.
+A [Wiki](https://www.hpc-certification.org/wiki) is being used to edit the skills' descriptions, and a navigable and widely customisable [JavaScript](https://www.hpc-certification.org/cs/map/) makes the skill tree easily accessible to the forum members and  end-users alike.
 
 The first iteration of processes and tools have been developed and deployed to curate the examination questions and conduct an online multiple-choice examination. We are thankful to the [PeCoH project](https://www.hhcc.uni-hamburg.de/pecoh.html) for the contributions towards the development of these tools.
 
