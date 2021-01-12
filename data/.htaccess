@@ -1,3 +1,4 @@
 RewriteRule ^examiner         examiner.php  [QSA,L]
+RewriteRule ^verify           verifier.php  [QSA,L]
 RewriteRule ^contribute-question/(.*)$         contribute-question.php?id=$1  [QSA,L]
 RewriteRule ^api/(.*)$         api.php?request=$1  [QSA,L]
