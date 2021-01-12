@@ -1,5 +1,13 @@
 var gTestGui = {};
 
+var clearQuestion = function(){
+  $('textarea#question').val("");
+  for(var i = 0; i < 10; i++){
+    $("#a" + (i-1)).val("");
+    $("#o" + (i-1)).prop("checked", false);
+  }
+}
+
 var genQuestion = function(){
   var inputs = $('textarea');
   var question = $('textarea#question').val();
@@ -188,6 +196,16 @@ $().ready(function() {
       var text = $("#question").val();
       if(text[0] == '^'){
         var a = text.split("\n");
+        var multiline = false;
+        for(var i = 1; i < a.length; i++){
+          if(a[i][0] == '^'){
+            multiline = true;
+            break;
+          }
+        }
+        if(multiline){
+          a = text.split("\n^");
+        }
         $("#question").val(a[0].substr(1).trim());
         for(var i = 1; i < a.length; i++){
           var text = a[i];

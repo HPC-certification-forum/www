@@ -57,7 +57,9 @@ function clean_str($string) {
 
 function create_file_name($id, $name){
   $path = "/home/www/hpccertification/examination-questions-staging/" . $id;
-  mkdir($path, 0755, true);
+  if(! file_exists($path)){
+    mkdir($path, 0755, true);
+  }
   return $path . "/" . clean_str($name);
 }
 
@@ -82,8 +84,12 @@ function validate_question_submission($id){
         exit(0);
       }
       $name = clean_str($_POST["los"]);
-      if($name == "NA"){
+      if($name == "na"){
         print("<h1 style='color:red'>You must select a valid learning objective</h1><p>Please return with your browser to the previous page and fix the error.</p>");
+        exit(0);
+      }
+      if(strlen($_POST["question"]) < 8){
+        print("<h1 style='color:red'>You must provide a question!</h1><p>Please return with your browser to the previous page and fix the error.</p>");
         exit(0);
       }
       $path = create_file_name($id, $name);
@@ -162,13 +168,13 @@ function view_question_submit($id){
     <div>
     <label for="name">Your name</label></div>
     <div>
-    <input type="text" id="name" name="name" size="50">
+    <input type="text" id="name" name="name" autocomplete="name" size="50">
     </div>
 
     <div>
     <label for="email">Email</label>
     </div><div>
-    <input type="text" id="email" name="email" pattern=".*@.*" size="50">
+    <input type="email" id="email" name="email" autocomplete="email" size="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
     </div>
     </p>
 
@@ -209,7 +215,11 @@ function view_question_submit($id){
     </p>
 
     <h3><label for="question">Question</label></h3>
-    <p><em>You can paste a question and all answers into this box, if you start the question with "^". Use then one line for the question and per answer and * at the beginning of a line to indicate a correct answer.</em><p>
+    <p><em>You can paste a question and all answers into this box, if you start the question with "^".
+    Use one line for the question and per answer and * at the beginning of a line to indicate a correct answer.
+    If you have a multi-line response, start each new answer with ^</em><p>
+    <input type="button" class="btn btn-danger" value="Clear form" onclick='clearQuestion()'>
+
     <p>
     <textarea id="question" name="question" rows="4" cols="100"></textarea>
     </p>
@@ -232,8 +242,7 @@ function view_question_submit($id){
     </p>
 
     <input type="submit" class="btn btn-primary" value="Submit">
-    <input type="button" class="btn" value="Preview" onclick='genQuestion()'>
-
+    <input type="button" class="btn btn-secondary" value="Preview" onclick='genQuestion()'>
   </form>
   </div>
 
