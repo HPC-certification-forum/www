@@ -13,6 +13,7 @@ We had been working hard to prototype the examination process and develop an eco
 In order to complete the question pool for all learning objectives, we are calling for our first certificate hackathon during which the question pool can be reviewed and extended by professionals from the field.
 The hackathon is organized as two events in February to allow attendees to pick a suitable slot:
 - Monday 8th February, 16-18 GMT
+- Wednesday 10th February, 10-11 GMT
 - Thursday 11th February, 16-18 GMT
 
 During an event, we will be using Google Meet for the discussion supported by Slack and Google Drive for interactive editing/commenting of the question pool.
