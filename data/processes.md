@@ -417,7 +417,7 @@ The general assembly brings together all members of the forum to discuss the sta
 
 Open meetings are held on a monthly basis, anyone that is interested may participate.
 We are using Slack for the meetings to allow everybody to read the progress of the discussion and to comment upon any action item.
-The general chair will post calendar invites via the [members mailinglist](/mailman/listinfo/hpccf-members).
+The general chair will post calendar invites via the [members mailinglist](https://lists.vi4io.org/postorius/lists/hpccf-members.lists.vi4io.org/).
 
 The meetings in Slack follow this procedure:
 

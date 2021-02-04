@@ -10,7 +10,7 @@ backgroundID: books
 Certificates bundle skill usefully together and structure examinations.
 
 We are currently working on releasing the first certificate for the cluster operating system subtree [use/1/1](https://www.hpc-certification.org/wiki/skill-tree/use/1/b).
-If you are interested in the progress subscribe to our [mailing list](http://localhost:4000/listinfo/).
+If you are interested in the progress subscribe to our [NEWS mailing list](https://lists.vi4io.org/postorius/lists/hpccf-news.lists.vi4io.org/).
 
 ## Examinations
 

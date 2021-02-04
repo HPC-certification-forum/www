@@ -25,7 +25,7 @@ A visit to our website can result in the storage on our server of information ab
 
 #### Mailing lists/Newsletter
 Following subscription to our mailing lists, your e-mail address is used to send the emails until you cancel the newsletter again. Cancellation is possible at any time.
-You may revoke your consent at any time with future effect. If you no longer want to receive the newsletter, then unsubscribe to [mailman on the web page](https://www.hpc-certification.org/listinfo).
+You may revoke your consent at any time with future effect. If you no longer want to receive the newsletter, then unsubscribe to [mailman on the web page](https://lists.vi4io.org).
 
 #### Disclosure
 
@@ -63,7 +63,7 @@ Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung die
 
 Wenn Sie den auf der Webseite angebotenen Newsletter (bzw. Mailinglisten) beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und mit dem Empfang des Newsletters einverstanden sind. Weitere Daten (Vor- und Nachname) können freiwillig eingegeben werden. Diese Daten verwenden wir ausschließlich für den Versand der angeforderten Informationen und geben sie nicht an Dritte weiter.
 
-Die erteilte Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Versand des Newsletters können Sie jederzeit widerrufen , etwa über den „Austragen“-Link im Newsletter oder im Menü von [Mailman](https://www.hpc-certification.org/listinfo).
+Die erteilte Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Versand des Newsletters können Sie jederzeit widerrufen , etwa über den „Austragen“-Link im Newsletter oder im Menü von [Mailman](https://lists.vi4io.org).
 
 
 #### Quellen

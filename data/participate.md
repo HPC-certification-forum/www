@@ -12,7 +12,7 @@ It is free to join for everyone!
 However, from full members (with voting rights) we expect contributions to the overall program.
 Note that anyone joining will be listed on the public webpage!
 
-Please join our [Mailing lists](/listinfo/)
+Please join our mailing lists [NEWS](https://lists.vi4io.org/postorius/lists/hpccf-news.lists.vi4io.org/) and [MEMBERS](https://lists.vi4io.org/postorius/lists/hpccf-members.lists.vi4io.org/).
 
 ## Development
 
