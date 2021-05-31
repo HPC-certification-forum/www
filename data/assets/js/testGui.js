@@ -46,7 +46,7 @@ var initTestGui = function() {
 	gTestGui.makeElement = function(elementTag, elementClass, content) {
 		var result = document.createElement(elementTag);
 		result.setAttribute("class", elementClass);
-		if(content) result.innerHTML = content;
+		if(content) result.innerHTML = content.replace("&", "&amp;").replace("\"", "&quot;").replace("'", "&apos; ").replace("<", "&lt;").replace(">", "&gt;");
 		return result;
 	};
 

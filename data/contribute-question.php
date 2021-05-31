@@ -1,5 +1,7 @@
 <?php
 
+$root = "/home/www-hpccf/git";
+
 function get_actual_link(){
   return 'https://'.$_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 }
@@ -56,7 +58,8 @@ function clean_str($string) {
 }
 
 function create_file_name($id, $name){
-  $path = "/home/www/hpccertification/examination-questions-staging/" . $id;
+  global $root;
+  $path = $root . "/examination-questions-staging/" . $id;
   if(! file_exists($path)){
     mkdir($path, 0755, true);
   }
@@ -256,7 +259,7 @@ function view_question_submit($id){
 }
 
 # Controller for the multiple phases
-chdir("/home/www/hpccertification/skill-tree-wiki/skill-tree/");
+chdir($root . "/skill-tree-wiki/skill-tree/");
 
 $id = $_GET["id"];
 if($id == NULL || ! preg_match('/^[A-Za-z0-9_\/]*$/', $id)){

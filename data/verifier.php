@@ -1,1 +1,1 @@
-/home/www/hpccertification/examination-tools/scripts/verifier.php
+/home/www-hpccf/git/examination-tools/scripts/verifier.php

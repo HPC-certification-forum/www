@@ -1,7 +1,7 @@
 #!/bin/bash
 
 (
-cd /home/www/hpccertification/
+cd /home/www-hpccf/git
 git pull -q
 git push -q
 pushd data
@@ -26,7 +26,7 @@ popd
 done
 
 
-pushd /home/www/hpccertification/examination-tools/scripts
+pushd /home/www-hpccf/git/examination-tools/scripts
 ./cron-marker.py
 popd
 

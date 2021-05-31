@@ -3,10 +3,11 @@
    * RESTful API to request skills
    */
   # Root to skills
-  $skill_root = "/home/www/hpccertification/skill-tree-wiki/skill-tree/";
-  $material_root = "/home/www/hpccertification/skill-data-material/";
-  $event_root = "/home/www/hpccertification/skill-data-events/";
-  $exam_root = "/home/www/hpccertification/examination-questions-staging/";
+  $root = "/home/www-hpccf/git";
+  $skill_root = $root ."/skill-tree-wiki/skill-tree/";
+  $material_root = $root ."/skill-data-material/";
+  $event_root = $root ."/skill-data-events/";
+  $exam_root = $root . "/examination-questions-staging/";
 
   $debug = array_key_exists("debug", $_GET);
   $skill = $_GET["request"];
