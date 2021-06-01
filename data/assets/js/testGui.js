@@ -1,5 +1,21 @@
 var gTestGui = {};
 
+var testStartTimer = function(time){
+  setInterval(function() {
+    var remain = time - new Date()  / 1000;
+    var txt = "";
+    
+    if(remain < 120){
+      $('#deadline').css("background-color", "red");
+      txt = "<br>Please do not forget to submit your test, otherwise your progress is lost!"
+    }else if(remain < 300){
+      $('#deadline').css("background-color", "yellow");
+      txt = "<br>Please do not forget to submit your test, otherwise your progress is lost!"
+    }
+    $('#deadline').html("Time remaining: " + Math.round(remain) + "s" + txt);
+  }, 1000);
+}
+
 var clearQuestion = function(){
   $('textarea#question').val("");
   for(var i = 0; i < 10; i++){
@@ -43,10 +59,10 @@ var initTestGui = function() {
 		}
 	};
 
-	gTestGui.makeElement = function(elementTag, elementClass, content) {
+	gTestGui.makeElement = function(elementTag, elementClass, content, escapeHTML = true) {
 		var result = document.createElement(elementTag);
 		result.setAttribute("class", elementClass);
-		if(content) result.innerHTML = content.replace("&", "&amp;").replace("\"", "&quot;").replace("'", "&apos; ").replace("<", "&lt;").replace(">", "&gt;");
+		if(content) result.innerHTML = escapeHTML ? content.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g, "&apos;").replace(/</g, "&lt;").replace(/>/g, "&gt;") : content;
 		return result;
 	};
 
@@ -150,14 +166,16 @@ var initTestGui = function() {
     var data = $("#testMetadata");
     if(data){
   		var metadata = JSON.parse(data[0].innerHTML);
-  		var submissionFields = gTestGui.makeElement("fieldset", "submission-fieldset", "<legend>Submitter information</legend>");
+      testStartTimer(metadata["deadline"]);
+      
+  		var submissionFields = gTestGui.makeElement("fieldset", "submission-fieldset", "<legend>Submitter information</legend>", false);
   		submissionFields.appendChild(gTestGui.makeElement("p", "submiter-info",
   			"Name: <b>" + metadata.name + "</b><br>" +
   			"Email: <b>" + metadata.email + "</b><br>" +
-  			"Affiliation: <b>" + metadata.affiliation + "</b>"));
-  		submissionFields.appendChild(gTestGui.makeElement("p", "submission-warning",
+  			"Affiliation: <b>" + metadata.affiliation + "</b>", false));
+  		/*submissionFields.appendChild(gTestGui.makeElement("p", "submission-warning",
   			"Please check the correctness of the Name, Email address, and Affiliation.<br>" +
-  			"<b>Test submissions cannot be undone, the values above will be used to create your certificate</b>."));
+  			"<b>Test submissions cannot be undone, the values above will be used to create your certificate</b>.", false)); */
   		var submitButton = gTestGui.makeElement("input", "btn btn-primary");
   		submitButton.setAttribute("type", "button");
   		submitButton.setAttribute("value", "Submit the exam");
