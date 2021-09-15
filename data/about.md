@@ -108,21 +108,30 @@ The steering board members are full members elected annually during the general 
 
 ## Current Steering Board
 
-The steering board for the period 2020/2021 is:
+The steering board for the period 2021/2022 is:
 
   * General chair: **Julian Kunkel** (University of Reading)
   * Skill-tree curator: **Kai Himstedt** (University of Hamburg)
   * Topic curators:
     * HPC Knowledge: **Lev Lafayette** (University of Melbourne)
     * Performance Engineering: **Anja Gerbes** (University of Frankfurt)    
-    * Sofware Development: **Roberto Villegas-Diaz** (South Dakota State University)
+    * Sofware Development: **jointly managed by the board**
     * Administration: **Sudeep Narayan Banerjee** (Indian Institute of Technology Gandhinagar)
     * Use of the HPC Environment: **jointly managed by the board**
     * Big Data: **jointly managed by the board**
-  * Examination curator: **Christian Meesters** (University of Mainz)
+  * Examination curator: __We are looking for someone to take this position! Contact the board!__
   * Publicity chair: **Weronika Filinger** (EPCC)
   * Webpage curator: __We are looking for someone to take this position! Contact the board!__
 
-
 ## Contact Us
 Feel free to reach out to us via the email address of the executive board: <a href="mailto:board@hpc-certification.org">board@hpc-certification.org</a>.
+
+## Honorable Mentions
+
+We thank the following people for serving in the board previously:
+  * **Christian Meesters** (University of Mainz)
+  * **Roberto Villegas-Diaz** (South Dakota State University)
+  * **Jean-Thomas Acquaviva** (DDN)
+  * **Waseem Kamleh** (University of Adelaide)
+  * **Sharan Kalwani** (DataSwing)
+  * **Cristiana Dinea** (NVIDIA)
