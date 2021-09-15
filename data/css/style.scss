@@ -45,6 +45,8 @@ footer{
   font-size: small;
 }
 
+
+
 nav#toc{
   display:none;
 }
@@ -131,12 +133,20 @@ nav li.active a{
   color: #6610f2;
 }
 
+a {
+  color: #6610f2;
+}
+
 footer{
   margin-top:-2px;
 }
 
+main footer a{
+  color: #6610f2;
+}
+
 footer a{
-  color: white;
+  color: #6610f2;
 }
 
 body::before {
