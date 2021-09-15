@@ -120,7 +120,7 @@ The steering board for the period 2021/2022 is:
     * Use of the HPC Environment: **jointly managed by the board**
     * Big Data: **jointly managed by the board**
   * Examination curator: __We are looking for someone to take this position! Contact the board!__
-  * Publicity chair: **Weronika Filinger** (EPCC)
+  * Publicity chair: **Weronika Filinger** (EPCC) with support from **Sudeep Narayan Banerjee**
   * Webpage curator: __We are looking for someone to take this position! Contact the board!__
 
 ## Contact Us
