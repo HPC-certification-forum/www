@@ -1,0 +1,56 @@
+How easy are HPC systems to use for you?,How easy is it to prepare/and execute applications on the HPC systems?,"Are you satisfied with the experience (ease of use, your productivity, ...) when using HPC systems?",How useful is the (documentation) material provided by your data center(s) to use the HPC systems?,How useful are the training courses provided by the HPC community (and your data center) to use the HPC system?,Do you agree to the following statements [I have done sufficient training to do my job],Do you agree to the following statements [I miss important information what the (HPC) system is doing under the hood],Do you agree to the following statements [I miss training opportunities for important HPC topics ],Do you agree to the following statements [I have no time to do proper training],Do you agree to the following statements [My training is not recognized by professionals],Do you agree to the following statements [My productivity is low due to lack of knowledge],Do you agree to the following statements [I do understand the system sufficiently well],Do you agree to the following statements [It is difficult to identify which training courses are relevant to me],Do you agree to the following statements [I cannot find out the schedules of trainings],Do you agree to the following statements [I would be interested to obtain a recognized certificate for my competences],Do you agree to the following statements [I did not attend some training due to registration difficulties],Do you agree to the following statements [I did not attend some training due to costs (that I couldn't pay for)],Do you agree to the following statements [I need more training to fulfill my role productively],Do you agree to the following statements [I prefer virtual training over onsite events],How many training events have you attended over the last 5 years. (Hands-on in lectures count individually)
+3,3,3,3,4,No,Cannot judge,Cannot judge,Yes,Yes,Yes,Cannot judge,Cannot judge,No,Yes,No,No,Yes,No,< 2 Events
+3,4,4,4,4,Yes,Yes,No,No,Yes,Cannot judge,Yes,Yes,No,Yes,No,No,Yes,Yes,< 5 Events
+5,5,5,5,5,Yes,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,Yes,Yes,< 5 Events
+3,4,3,4,3,Yes,Yes,Cannot judge,Yes,Cannot judge,No,Yes,No,No,No,No,No,Yes,Yes,< 2 Events
+4,4,5,5,4,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,< 5 Events
+1,2,1,1,3,Yes,Yes,Cannot judge,Yes,Cannot judge,Yes,No,No,Yes,No,No,No,No,Yes,< 2 Events
+2,2,3,4,3,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,Yes,Yes,Yes,< 2 Events
+4,3,4,4,5,Cannot judge,No,No,No,Cannot judge,Cannot judge,Yes,Cannot judge,No,Yes,No,No,Yes,Cannot judge,< 5 Events
+5,5,5,4,3,Yes,No,No,No,No,No,Yes,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Yes,< 10 Events
+4,4,4,4,3,Yes,No,No,No,Yes,No,No,No,No,Yes,No,Yes,Cannot judge,Cannot judge,< 5 Events
+4,5,5,3,2,Yes,No,Yes,No,Yes,No,Yes,No,Yes,Yes,No,Yes,Yes,Yes,< 2 Events
+4,3,4,4,5,Yes,Yes,No,No,Yes,No,Yes,Yes,No,Yes,Cannot judge,Cannot judge,No,Cannot judge,< 2 Events
+4,5,5,3,3,Yes,No,No,No,Cannot judge,No,Yes,No,Cannot judge,Yes,No,No,Cannot judge,Cannot judge,< 2 Events
+3,3,5,4,5,No,Yes,Yes,Yes,Yes,No,Cannot judge,No,No,Yes,Cannot judge,No,Yes,Yes,< 2 Events
+2,2,3,5,3,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,< 5 Events
+4,4,5,5,4,Yes,Cannot judge,No,Yes,Cannot judge,No,Yes,Yes,No,No,No,No,No,No,0 Events
+5,5,5,5,5,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,< 5 Events
+5,4,4,3,2,Yes,Yes,Cannot judge,Yes,Cannot judge,No,Yes,No,No,Yes,No,Yes,No,Yes,< 5 Events
+4,2,4,4,4,Yes,Cannot judge,Cannot judge,No,No,Cannot judge,Yes,Yes,No,No,No,No,Cannot judge,Cannot judge,< 5 Events
+4,4,5,5,1,Yes,No,Yes,No,Yes,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,< 10 Events
+3,2,4,3,3,Yes,Yes,No,Yes,No,Yes,Yes,Yes,No,Yes,No,No,Yes,Yes,< 2 Events
+4,5,4,4,5,Yes,Cannot judge,No,Yes,Yes,No,Yes,No,No,No,No,No,Cannot judge,Yes,< 2 Events
+2,2,3,4,4,Yes,Yes,No,No,Cannot judge,Cannot judge,No,No,No,Yes,No,No,Yes,Cannot judge,< 5 Events
+4,4,4,4,5,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Cannot judge,< 10 Events
+4,4,3,4,5,Yes,No,No,No,Cannot judge,No,Yes,No,No,Yes,No,Yes,Cannot judge,No,< 5 Events
+5,4,5,5,5,Yes,No,No,No,No,No,Cannot judge,Yes,No,No,No,No,Yes,Yes,< 5 Events
+3,4,4,3,3,Yes,No,No,No,No,No,Yes,Cannot judge,Cannot judge,Cannot judge,No,No,No,No,0 Events
+3,3,3,3,4,Yes,Yes,Yes,Yes,Cannot judge,Cannot judge,Yes,Yes,No,Yes,No,No,Yes,Yes,< 5 Events
+2,3,4,3,4,No,Cannot judge,No,No,No,Yes,Cannot judge,Yes,No,Yes,No,No,Yes,Yes,< 2 Events
+5,5,5,3,4,Yes,No,No,No,Cannot judge,No,Yes,No,Yes,No,No,No,No,No,
+3,2,3,3,3,Cannot judge,Yes,Yes,No,Cannot judge,Yes,No,No,No,No,No,No,Yes,Yes,< 5 Events
+5,3,4,5,5,Yes,Cannot judge,Cannot judge,No,Yes,No,Yes,No,No,No,No,No,No,Yes,< 10 Events
+3,3,4,3,,Yes,No,No,No,Yes,No,Cannot judge,No,No,Yes,No,No,No,Yes,< 5 Events
+4,3,3,4,5,Cannot judge,No,No,Yes,No,Yes,Yes,No,No,No,No,Yes,Yes,Yes,0 Events
+5,4,5,3,5,Yes,No,Cannot judge,No,Cannot judge,Cannot judge,Yes,No,Cannot judge,No,Yes,No,No,Yes,< 10 Events
+4,3,4,4,5,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,< 5 Events
+4,4,4,4,,Yes,No,No,No,Cannot judge,No,Yes,Cannot judge,No,No,No,No,No,Cannot judge,0 Events
+3,4,4,5,4,No,Yes,No,Yes,No,Yes,No,Cannot judge,Cannot judge,Yes,No,No,Yes,No,< 2 Events
+5,5,5,4,4,Yes,Yes,Yes,No,No,Cannot judge,Cannot judge,No,No,Yes,No,No,Yes,Yes,< 2 Events
+1,1,,1,1,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Yes,Cannot judge,Cannot judge,Cannot judge,< 5 Events
+4,4,4,5,5,Yes,No,Cannot judge,No,Cannot judge,No,Yes,No,No,Yes,No,No,Yes,Yes,< 5 Events
+5,5,5,5,5,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,< 2 Events
+3,4,4,4,3,No,Cannot judge,Cannot judge,No,No,Yes,No,Yes,No,Yes,No,No,Yes,No,< 2 Events
+3,3,2,4,4,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,No,No,Yes,No,< 5 Events
+2,3,2,4,3,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,< 5 Events
+3,3,4,2,3,Cannot judge,Cannot judge,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0 Events
+2,3,3,5,3,Yes,Yes,Yes,No,No,Yes,No,Yes,Cannot judge,Yes,Cannot judge,No,Yes,No,< 2 Events
+4,4,3,3,3,Yes,Yes,No,No,No,Yes,Yes,Yes,No,Yes,No,Yes,Cannot judge,Yes,< 10 Events
+5,5,4,5,5,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,< 5 Events
+4,4,4,2,4,Yes,Yes,No,Yes,Yes,No,No,Yes,Yes,Yes,No,No,Yes,Yes,< 2 Events
+3,4,4,,1,Cannot judge,Cannot judge,Cannot judge,Yes,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,Cannot judge,< 2 Events
+4,4,4,3,4,Yes,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,Yes,< 5 Events
+4,3,4,4,3,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Cannot judge,0 Events
+3,2,4,3,4,Cannot judge,No,Yes,Cannot judge,No,Yes,Cannot judge,Yes,Cannot judge,No,No,No,Yes,Cannot judge,< 5 Events
+4,2,2,2,1,No,Cannot judge,Yes,No,Cannot judge,Yes,Yes,Yes,Yes,Yes,No,Cannot judge,Yes,Cannot judge,< 5 Events
