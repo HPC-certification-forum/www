@@ -110,11 +110,11 @@ The steering board members are full members elected annually during the general 
 
 The steering board for the period 2021/2022 is:
 
-  * General chair: **Julian Kunkel** (University of Reading)
+  * General chair: **Julian Kunkel** (Georg-August Universiät Göttingen/GWDG)
   * Skill-tree curator: **Kai Himstedt** (University of Hamburg)
   * Topic curators:
     * HPC Knowledge: **Lev Lafayette** (University of Melbourne)
-    * Performance Engineering: **Anja Gerbes** (University of Frankfurt)    
+    * Performance Engineering: **Anja Gerbes** (University of Dresden)    
     * Sofware Development: **jointly managed by the board**
     * Administration: **Sudeep Narayan Banerjee** (Indian Institute of Technology Gandhinagar)
     * Use of the HPC Environment: **jointly managed by the board**
