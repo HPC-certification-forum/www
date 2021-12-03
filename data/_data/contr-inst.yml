@@ -1,26 +1,21 @@
-- name: University of Reading
-  url: https://www.reading.ac.uk
-  image: https://www.reading.ac.uk/web/multimediafiles/legacy-uor-home.png
+- name: GWDG
+  url: https://www.gwdg.de
+  image: https://www.gwdg.de/GWDG-Theme-1.0-SNAPSHOT/images/gwdg_logo.svg
+- name: Georg-August Universität Göttingen
+  url: https://www.uni-goettingen.de
+  image: https://www.uni-goettingen.de/storage/pictures/ff096b80db0a15a4de68156026f73345.jpg
+- name: Universität Dresden
+  url: https://tu-dresden.de/
+  image: https://tu-dresden.de/++theme++tud.theme.webcms2/img/tud-logo.svg
 - name: Universität Hamburg
   url: https://www.uni-hamburg.de
   image: https://assets.rrz.uni-hamburg.de/assets/uhh-logo-4ec3691b46570436d95977e2c0c368646d0c24d722425dd674f48b1c44585e81.svg
 - name: EPCC
   url: https://www.epcc.ed.ac.uk/
   image: https://www.epcc.ed.ac.uk/sites/all/themes/epcc/images/epcc-logo.png
-- name: DDN
-  url: https://www.ddn.com/
-  image: /assets/img/ddn.png
 - name: University of Melbourne
   url: https://www.unimelb.edu.au/
   image: https://d2glwx35mhbfwf.cloudfront.net/v2.0.1/logo.svg
-- name: DataSwing
-  image: /assets/img/dataswing_logo.png
 - name: Johannes Gutenberg Universität Mainz
   image: /assets/img/jgu_logo_kasten.jpg
   url: https://www.uni-mainz.de/eng/
-- name: Goethe Univesität Frankfurt
-  image: /assets/inst/gu.jpg
-  url: https://www.goethe-university-frankfurt.de/en
-- name: Center for Scientific Computing (CSC)
-  image: /assets/inst/csc.png
-  url: https://csc.uni-frankfurt.de/
