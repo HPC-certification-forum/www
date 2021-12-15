@@ -110,7 +110,7 @@ The steering board members are full members elected annually during the general 
 
 The steering board for the period 2021/2022 is:
 
-  * General chair: **Julian Kunkel** (Georg-August Universiät Göttingen/GWDG)
+  * General chair: **Julian Kunkel** (Georg-August Universität Göttingen/GWDG)
   * Skill-tree curator: **Kai Himstedt** (University of Hamburg)
   * Topic curators:
     * HPC Knowledge: **Lev Lafayette** (University of Melbourne)
