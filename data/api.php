@@ -213,7 +213,7 @@
       }
       $out[$first] = $items;
     }
-    if(! array_key_exists("outcomes", $out)){
+    if(! array_key_exists("learning outcomes", $out)){
       return array("error" => "skill is incomplete", "id" => $id);
     }
     // append additional information

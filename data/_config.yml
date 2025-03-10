@@ -13,7 +13,7 @@ url: "https://hpc-certification.org" # the base hostname & protocol for your sit
 paginate: 5
 theme-dark: false #Set to true to change to dark website theme
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 plugins_dir: [jekyll-paginate, kramdown]
 # Build settings
