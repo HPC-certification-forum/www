@@ -93,45 +93,50 @@ The executive roles for the board are:
   * **General Chair**:
     * Chairs the overall executive board
     * Chairs meetings and conference calls
-  * **Skill-tree curator (STC)**:
+  * **Skill Tree Curator (SCU)**:
     * Decides new curriculum releases
-    * Merges changes suggested by TC
-  * **Topic curator (TC)**
+    * Merges changes suggested by TCU
+  * **Topic Curator (TCU)**
      * Curates a subtree
      * Funnels change requests of members
-  * **Examination curator (EC)**
+  * **Examination Curator (ECU)**
      * Manages the exam process and the question pool
-  * **Publicity chair (PC)**
-     * Develops and implements PR strategy
+  * **Publicity Chair (PUC)**
+     * Prepares and implements PR strategy
+  * **Technical Chair (TEC)**
+     * Oversees maintenance and directs development of the underlying HPC CF tools
 
 The steering board members are full members elected annually during the general assembly.
 
 ## Current Steering Board
 
-The steering board for the period 2021/2022 is:
+The steering board for the period 2026/2027 is:
 
-  * General chair: **Julian Kunkel** (Georg-August Universität Göttingen/GWDG)
-  * Skill-tree curator: **Kai Himstedt** (DKRZ)
-  * Topic curators:
-    * HPC Knowledge: **Lev Lafayette** (University of Melbourne)
-    * Performance Engineering: **Anja Gerbes** (University of Dresden)    
-    * Sofware Development: **Marc-Andre Hermanns** (RWTH Aachen)
-    * Administration: **Sudeep Narayan Banerjee** (Indian Institute of Technology Gandhinagar)
-    * Use of the HPC Environment: **jointly managed by the board**
-    * Big Data: **jointly managed by the board**
-  * Examination curator: __We are looking for someone to take this position! Contact the board!__
-  * Publicity chair: **Weronika Filinger** (EPCC) with support from **Sudeep Narayan Banerjee**
-  * Webpage curator: __We are looking for someone to take this position! Contact the board!__
+  * General Chair: **Julian Kunkel** (Georg-August Universität Göttingen/GWDG)
+  * Skill Tree Curator: **Kevin Lüdemann** (GWDG)
+  * Topic Curators:
+    * **Lev Lafayette** (University of Melbourne)
+    * **Marc-Andre Hermanns** (RWTH)
+    * **Victoria Döller** (TUW)
+    * **Jasper Seehofer** (HLRS)
+    * **Xavier Martorell** (BSC)
+  * Examination Curator: **Jaison Lewis** (GWDG)
+  * Publicity Chair: **Anja Gerbes** (GWDG) 
+  * Technical Chair: **Matthias Eulert** (GWDG)
 
 ## Contact Us
-Feel free to reach out to us via the email address of the executive board: <a href="mailto:board@hpc-certification.org">board@hpc-certification.org</a>.
+
+Feel free to reach out to us via the email address of the steering board: <a href="mailto:board@hpc-certification.org">board@hpc-certification.org</a>.
 
 ## Honorable Mentions
 
-We thank the following people for serving in the board previously:
+We thank the following people for serving in the steering board previously (sorted by first name):
   * **Christian Meesters** (University of Mainz)
-  * **Roberto Villegas-Diaz** (South Dakota State University)
-  * **Jean-Thomas Acquaviva** (DDN)
-  * **Waseem Kamleh** (University of Adelaide)
-  * **Sharan Kalwani** (DataSwing)
   * **Cristiana Dinea** (NVIDIA)
+  * **Jean-Thomas Acquaviva** (DDN)
+  * **Kai Himstedt** (DKRZ)
+  * **Roberto Villegas-Diaz** (South Dakota State University)
+  * **Sharan Kalwani** (DataSwing)
+  * **Sudeep Narayan Banerjee** (Indian Institute of Technology Gandhinagar)
+  * **Waseem Kamleh** (University of Adelaide)
+  * **Weronika Filinger** (EPCC) 
