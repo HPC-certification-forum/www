@@ -21,11 +21,11 @@ We welcome pull requests and contributions to the skill tree and tools.
 
 ## Meetings
 
-Join our [Slack Channel](https://join.slack.com/t/hpc-certification/shared_invite/zt-4h4w3ldt-wrG_URr6u6YYUK5Ija6K0Q).
-If there is any issue joining Slack, please contact [Julian](mailto:juliankunkel@googlemail.com).
+Join our [Matrix Channel](https://matrix.to/#/#hpc-cf-general:gwdg.de).
+If there is any issue joining Matrix Channel, please contact [Julian](mailto:juliankunkel@googlemail.com) or [Kevin](mailto:kevin.luedemann@gwdg.de).
 
 We organize meet on a monthly basis to discuss the status.
-We are using Slack for the meetings to allow everybody to read the progress of the discussion and to comment upon any action item.
+We are using Matrix for the meetings to allow everybody to read the progress of the discussion and to comment upon any action item.
 The meetings are open for anyone that is interested to participate.
 Details are found on the [processes page](/processes/#meetings).
 

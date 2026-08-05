@@ -131,10 +131,10 @@ Note that not all processes are completely implemented, yet.
   1. The subtree topic chairs reports the readiness of the respective trees to the tree curator who reports the status of the next release during a board meeting.
   1. The board will decide upon the new version tag.
   1. Typically the tree curator will tag the accepted status with a new revision of the tree followed by "-rc" for release candidates, e.g., "v1.05-rc".
-  1. The tree curator will announce the release candidate on Slack and the mailing list.
+  1. The tree curator will announce the release candidate on Matrix and the mailing list.
   1. The board shall checked the correct tagging and that existing tools work correctly with the new revision of the tree.
   1. The final release tag will be set, the "latest" tag will be bumped up to this veri.
-  1. The general chair will announce the new revision on Slack and the mailing list.
+  1. The general chair will announce the new revision on Matrix and the mailing list.
 
   </div>
   </div>
@@ -155,7 +155,7 @@ Note that not all processes are completely implemented, yet.
 
   Contributions to the skill definitions can be made by
   1. editing the skill definitions on the Wiki (particularly for S0, S1 and T1 changes)
-  1. discussing them on Slack (it is a good idea to announce complex changes to the community in the #skill-tree channel)
+  1. discussing them on Matrix (it is a good idea to announce complex changes to the community in the #skill-tree channel)
   1. adjusting the cs-tree in the MindMap (editable via the FreePlane tool)
   1. directly preparing a GitHub pull request that changes the Markdown files in the community repository. As GitHub allows for commenting on individual lines, this provides means for rapid feedback as well.
   1. adopting a skill. We encourage [experts to maintain skills](#cs-adopting) in their expertise which ensures the skill is meeting the needs of the community.
@@ -190,7 +190,7 @@ The curator should participate in discussions involving the specific skill.
 Procedure to adopt a skill
 Initially, the expert should review the skill carefully and make suggestions for any change.
 The expert should also contribute some examination questions to the portfolio.
-The responsible subtree curator should be contacted by email or Slack (skill-tree channel) and the interest to adopt the skill must be expressed together with a brief reference about expertise in the field. The board will then accept or deny the request.
+The responsible subtree curator should be contacted by email or Matrix (skill-tree channel) and the interest to adopt the skill must be expressed together with a brief reference about expertise in the field. The board will then accept or deny the request.
   </div>
   </div>
   </div>
@@ -416,10 +416,10 @@ The general assembly brings together all members of the forum to discuss the sta
 #### Open meeting procedure
 
 Open meetings are held on a monthly basis, anyone that is interested may participate.
-We are using Slack for the meetings to allow everybody to read the progress of the discussion and to comment upon any action item.
+We are using Matrix for the meetings to allow everybody to read the progress of the discussion and to comment upon any action item.
 The general chair will post calendar invites via the [members mailinglist](https://lists.vi4io.org/postorius/lists/hpccf-members.lists.vi4io.org/).
 
-The meetings in Slack follow this procedure:
+The meetings in Matrix follow this procedure:
 
   - The PC will post the tentative agenda before the meeting.
     - You may respond to this with proposals for further agenda items by starting a thread as a response.  
@@ -463,7 +463,7 @@ In case the BoF was not accepted, we will organize an alternative meeting during
 The organization of the general assembly falls into the responsibility of the general chair and steering board but should involve the new steering board members.
 A time slot should be reserved for the new steering board to present an updated roadmap.
 
-Voting is done publicly on a Slack channel "election" in the HPC Certification forum.
+Voting is done publicly on a Matrix channel "election" in the HPC Certification forum.
 Everyone can nominate someone at the channel or self-nominate themself by posting a message with the name of the nominee, the position, and a brief description.
 The brief description should state why the nominee is qualified/seeks to become responsible for the given position.
 
@@ -471,7 +471,7 @@ At the end of the nomination phase, the general chair will compose a list of can
 HPCCF members can then vote using thumbs up on the candidate(s) they like.
 The members are encouraged to vote based on past contributions made by a nominee and the potential they see by appointing the member to chair the respective activity in the initiative.
 
-Members can send any concern regarding a nominee privately to the board (either by Slack or by Email).
+Members can send any concern regarding a nominee privately to the board (either by Matrix or by Email).
 By providing good reasons that a candidate is not suitable, the steering board can exclude a candidate from the nominee list.
 Before doing so, the steering board will contact the nominee and assess the situation.
 
