@@ -22,7 +22,7 @@ We welcome pull requests and contributions to the skill tree and tools.
 ## Meetings
 
 Join our [Matrix Room](https://matrix.to/#/#hpc-cf-general:gwdg.de).
-If there is any issue joining Matrix Channel, please contact [Julian](mailto:juliankunkel@googlemail.com) or [Kevin](mailto:kevin.luedemann@gwdg.de).
+If there is any issue joining the Matrix Room, please contact [Julian](mailto:juliankunkel@googlemail.com) or [Kevin](mailto:kevin.luedemann@gwdg.de).
 
 We organize meet on a monthly basis to discuss the status.
 We are using Matrix for the meetings to allow everybody to read the progress of the discussion and to comment upon any action item.
